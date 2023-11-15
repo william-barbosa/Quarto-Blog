@@ -1,0 +1,64 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "William Barbosa"
+
+
+  page-footer:
+    left: "&copy; Copyright 2022, Author"
+    right: "Essa página foi construída com [Quarto](https://quarto.org/)."
+
+  navbar:
+      left:
+      - text: "Início"
+        file: index.qmd
+      #right:
+      - text: "Blog"
+        href: blog.qmd
+
+      - text: "Sobre"
+        menu:
+        - text: "Texto 1"
+        - text: "Texto 2"
+        - text: "Texto 3"
+
+
+  sidebar:
+    pinned: true
+    align: center
+    style: "docked"
+    # background: primary
+    collapse-level: 2
+    contents:
+      - text: "Projetos"
+        href: projects/index.qmd
+      # - text: "Pensar em algo com o que a comunidade stá falando"
+      #   href: talks/index.qmd
+      - section: "About"
+        contents:
+          - text: "About me"
+            href: about.qmd
+      - section: "Publicações"
+        contents:
+        - text: "Revistas"
+
+format:
+  html:
+    theme: custom.scss #william-tema.scss
+    css: styles.css
+    toc: true
+    # grid:
+      #  sidebar-width: 200px
+    #   body-width: 900px
+    #   margin-width: 400px
+      # gutter-width: 20px
+
+template-partials:
+  # - noto.html
+  - title-block.html
+
+# include-in-header: title-block.html
+

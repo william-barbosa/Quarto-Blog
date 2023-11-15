@@ -1,0 +1,14 @@
+---
+title: "Post With Code"
+title-block-banner: false
+author: "William Barbosa"
+date: "2022-10-25"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code. This is a post with executable code.
+
+```{r}
+1 + 1
+```

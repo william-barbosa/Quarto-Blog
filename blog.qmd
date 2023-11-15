@@ -1,0 +1,19 @@
+---
+title: "Blog"
+lang: pt
+subtitle: "Seja bem vindo ao meu blog!"
+title-block-banner: false
+description: |
+  Seja bem vindo ao meu blog!
+listing:
+  contents: blog
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  # date-format: short
+sidebar: true
+---
+
+<!-- Seja bem vindo ao meu blog 2! -->

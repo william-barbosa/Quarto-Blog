@@ -1,0 +1,32 @@
+---
+title: "Introdução ao R"
+title-block-banner: false
+author: "William Barbosa"
+date: "2023-11-15"
+categories: [R,VS Code]
+lang: pt
+---
+
+Esse é o primeiro post para instalação e configuração do R. Para que seja possível a programação em R no VS Code é necessário adotar alguns passos inicias:
+
+1. Baixar o R interpretador via CRAN (colocar link);
+2. Realizar a instalação e localizar o referido camimho;
+3. Instalar via Rgui os seguintes pacotes e demais procedimentos:
+  3.1 install.packages('SSS'). Nessa etapa será solicitado para selecionar o espelho do CRAN para baixar os pacotes (é indicado que o usuário selecione a opção mais próxima.);
+4. Instalar o VS Code (colocar link);
+
+![](R_cran.jpg)
+
+Teste `image`.
+
+
+#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
+
+git remote set-url origin https://exampleuser:b8c28127***63gu56b2d@github.com/exampleuser/exampleproject.git
+
+
+https://{william-barbosa}:{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}@github.com
+
+https://github.com/william-barbosa/Quarto-Blog.git
+
+

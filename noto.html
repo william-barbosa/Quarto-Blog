@@ -1,0 +1,36 @@
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Post With Code</h1>
+                                <div class="quarto-categories"> <!-- Insere a lista de categ-->
+                                  $for(categories)$
+                                  <div class="quarto-category">$categories$</div>
+                                  $endfor$
+                                </div>
+    </div>
+  </div>
+
+
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+        $for(categories)$
+        <div class="quarto-category">$categories$</div>
+        $endfor$
+            </div>
+    </div>
+
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 25, 2022</p>
+      </div>
+    </div>
+
+
+    </div>
+
+
+  </header>

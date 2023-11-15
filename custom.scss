@@ -1,0 +1,514 @@
+/*-- scss:defaults --*/
+
+$theme: "journal" !default;
+
+
+//
+// Color system
+//
+
+$black-Nav: rgb(58, 58, 58)!important;
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #eee !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #aaa !default;
+$gray-600: #777 !default;
+$gray-700: #495057 !default;
+$gray-800: #333 !default;
+$gray-900: #222 !default;
+$black:    #000 !default;
+
+$blue:    #eb6864 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #f57a00 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #f5e625 !default;
+$green:   #22b24c !default;
+$teal:    #20c997 !default;
+$cyan:    #369 !default;
+
+$primary:       $blue !default;
+$secondary:     $gray-500 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+$min-contrast-ratio:   1.28 !default;
+
+// Fonts
+
+$headings-font-family:   "CMU Serif", sans-serif !default;
+$headings-font-weight:    700 !default;
+$headings-line-height:    2 !default;
+
+
+// Buttons
+
+$input-btn-padding-x:         1rem !default;
+
+// Navbar
+
+// Pagination
+
+$pagination-hover-color:            $white !default;
+$pagination-hover-bg:               $primary !default;
+$pagination-hover-border-color:     $primary !default;
+
+
+
+/*-- scss:rules --*/
+
+
+// Variables
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" !default;
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+
+// Navbar
+
+/* Ajuste da página */
+// .selector-for-some-widget {
+//   box-sizing: content-box;
+// }
+
+// .blog-description {
+//   font-size: 1.1rem;
+//   color: #ff0000;
+// }
+
+/* Formatação geral da fonte cores de texto no geral */
+body {
+  font-family: "Red Hat Text", "Source Sans Pro" !important;
+  color: black;
+   background: rgb(255, 255, 255)!important;
+}
+
+
+/* Espaçamento superior: espaço entre o conteúdo e o navbar na página inicial*/
+div.quarto-about-trestles {
+  background-color: $white;
+  display: flex !important;
+  flex-direction: row;
+  width:fit-content;
+  padding-top: 2px !important;
+  // padding-bottom: 2em;
+  // margin-left: 1em;
+  // margin-right: 15em;
+}
+// Formatando a imagem do perfil
+div.quarto-about-trestles .about-entity {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-right: 0px;
+  row-gap: 1px!important;
+}
+// Formatação do título do banner!
+.quarto-title-banner {
+    padding-top: 5px;
+    padding-bottom: 2px;
+    color: white!important;
+    background: $black-Nav;
+    // position:absolute!important;
+}
+
+
+/* Barra de Navegação */
+.navbar{/* Altera cor do navbar rgb(0, 128, 0) */
+  /* background-color: rgb(0, 128, 0); */
+  background-color: $black-Nav;
+  padding-left: 20px!important; /* 75px*/
+}
+
+// .nav-container{
+//     padding-top: 0;
+//     padding-bottom: 0;
+// }
+
+
+// Formatação do botão inicial
+.navbar-dark .navbar-brand{
+  color: $white!important;
+  font-family: "Red Hat Text", "Source Sans Pro" !important;
+  font-size: 22px!important;
+ }
+
+ /* cor quando passa o mouse por cima do botão principal */
+.navbar-dark .navbar-brand:hover{
+    color: green!important;
+    font-size: 22px!important;
+}
+/* Formataçã de fontes e cores dos itens do navbar*/
+.navbar .navbar-nav li a{
+    color: $white!important;
+    font-family: "Red Hat Text", "Source Sans Pro" !important;
+    font-size: 22px!important;
+}
+
+/* Cor do texto quando passa o mouse por cima do link no header*/
+.navbar .navbar-nav li a:hover{
+    color:green!important;
+}
+
+// .dropdown .dropdown-menu .dropdown-item, .dropdown .dropdown-menu .dropdown-item:hover{
+//   color:red!important;
+// }
+
+/* Cor e formatação quando passar o mouse por cima dos itens do dropdown*/
+.dropdown-menu li:hover {
+color: $black;
+background-color: green!important;
+}
+
+// Formatação e espaçamento geral do navbar
+// .navbar-brand{
+//    margin-left:50px;
+//     padding-left: 50px;
+// }
+
+// Formatando o sidebar
+div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, nav.sidebar.sidebar-navigation:not(.rollup) {
+  background-color: $white;
+  color: $black-Nav!important;
+}
+// .sidebar.sidebar-navigation {
+//   padding-top: 1em;
+//   color: red;
+// }
+.sidebar-navigation a {
+  color: $black-Nav;
+  font-family: "Red Hat Text", "Source Sans Pro" !important;
+}
+div.sidebar-item-container:hover, div.sidebar-item-container:focus {
+  background: green!important;
+}
+
+
+
+
+// div.quarto-about-trestles .about-entity .about-image {
+//   object-fit: cover;
+//   margin-bottom: 0em;
+//   margin-left: 10em;
+// }
+
+// Formata o texto
+// div.quarto-about-trestles .about-entity {
+//   display: flex !important;
+//   flex-direction: column;
+//   align-items: center;
+//   text-align: center;
+//   padding-right: 0em;
+// }
+
+
+
+
+// // #LinkSide{/* Parte de baixo do Sidebar dos Links*/
+// //     border: 1px solid rgb(0, 0, 0)!important;
+// //     margin-top: 40px!important;
+// //     /*position: fixed!important;*/
+// // }
+
+
+/* Altera o container (resumo das postagens) */
+.container .blog-post{
+/*    background-color: red!important;*/
+    border-top: 1px solid #ccc!important;
+    margin-right: 0!important;
+    /*width: 800px!important;*/
+    /*background: #333;*/
+    background-color: white!important;
+    margin-top: 1px!important;
+    margin-bottom: 55px!important;
+
+}
+
+
+// .list.quarto-listing-default div:last-of-type {
+//   border-bottom: none;
+//   color: red!important;
+//   font-family: "Red Hat Text", "Source Sans Pro" !important;
+// }
+
+// Formata o título dos posts na lista  do blog
+div.quarto-post .body h3.listing-title, div.quarto-post .body .listing-title.h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: none;
+  color: $black;
+  font-family: "Red Hat Text", "Source Sans Pro" !important;
+  font-weight: bold!important;
+}
+
+div.quarto-post a {
+  color: $black;
+  font-family: "Red Hat Text", "Source Sans Pro" !important;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.list.quarto-listing-default div:last-of-type {
+  font-family: "Red Hat Text", "Source Sans Pro" !important;
+  color: $black!important;
+}
+
+
+// Alinhamento dos ícones das redes sociais abaixo do título do Banner
+// div.quarto-about-trestles .about-entity .about-links {
+//   // flex-direction: row;
+//   // column-gap: .8em;
+//   // row-gap: 2em;
+//   // flex-wrap: wrap;
+//   color: green!important;
+//   margin-left: 0em;
+//   // margin-top: 2em;
+
+// }
+
+.quarto-title .quarto-categories .quarto-category {
+  padding: .25em .75em;
+  color: white!important;
+  font-size: .9em;
+  text-transform: uppercase;
+  border: solid 1px;
+  border-radius: .25rem;
+  // opacity: .6;
+}
+
+
+
+
+// /*Definindo cores dos parágrafos e dos li's*/
+// p, li{
+//     color: black!important;
+//     font-size:15px!important;
+// }
+
+
+// .container-fluid {padding-left: 1000px;
+//     padding: 0 !important;
+
+//     margin-left: auto !important;
+//     margin-right: auto !important;
+// }*/
+// /*
+// .container{
+//     width: 100%;
+// }
+// */
+// /* Altera o botão 'inicial'*/
+
+
+
+
+
+
+// /* Alterando as margens da postagem na página inicial*/
+// .blog-post {
+// /*     width: 1020px!important; */
+//     margin-bottom: 4rem;
+//     color: blue!important; /* não está afetando nada*/
+// }
+
+
+
+
+// /* Altera cor da fonte do botão "leia mais..." */
+// .blog-post #teste {
+//     color: blue!important;
+//     text-decoration: none;
+//     font-family: "Red Hat Text", "Source Sans Pro"!important;
+//     font-weight: normal!important;
+//     font-style: normal!important;
+// }
+
+// /* Alterar o botão de próxima página*/
+// .btn-outline-primary, .btn-outline-primary.disabled, .btn-outline-primary:disabled{
+//     color:black!important;
+//     border-color: black!important;
+//     font-family: "Red Hat Text", "Source Sans Pro"!important;
+//     font-weight: normal!important;
+//     font-style: normal!important;
+// }
+// .btn-outline-primary:hover{
+//     background-color:blue!important;
+// }
+
+// /********* Altera o hero ********/
+// .hero-body {
+//     background-position: left;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-color: blue!important;
+//     padding-left: 0px !important;
+
+
+//   /*  margin-top: 1px!important;
+//     margin-bottom: 1px!important;
+//     padding-bottom: 10px!important;*/
+//     }
+// /* Alterando o background do heros
+// 'Hero' é o cabeçalho e o código está localizado no arquivo "cabecalho.html",
+// a grosso modo ele é um banner que aparece na largura da página
+// */
+// .hero.is-info {
+//     background-color: red!important;
+//     height: 100px!important;
+//     padding-left: 0px !important;
+// }
+
+// .hero .container {
+//     background-color: $white !important;
+//     font-family:  "Red Hat Text", "Source Sans Pro" !important;
+//     padding-left: 0px !important;
+//     padding-top: 0px !important;
+// }
+// /* 'Lucida Sans','Lucida Sans Regular',*/
+// /*
+// .hero.is-info .title{
+//     color: rgb(228, 15, 15);
+//     font-family: "Lucinda Grande";
+// }
+// */
+
+
+// /*Alterando o radapé */
+// .blog-footer{
+//     background-color: rgb(58, 58, 58)!important;
+//     /* height: 110px!important;*/
+//     padding: 15px!important;
+// }
+// .blog-footer p a{
+//     color: white!important;
+//     text-decoration: underline;
+//     font-family: "Red Hat Text", "Source Sans Pro"!important;
+//     font-size:18px!important;
+// }
+
+// #CriadoBy {
+//     color: white!important;
+//     font-family: "Red Hat Text", "Source Sans Pro"!important;
+//     font-size:14px!important ;
+// }
+
+// #testeP{
+//     color: tomato !important;
+// }
+// .blog-footer br{/* Espaço dentre itens: utilizado no footer*/
+//     content: ""!important;
+//     margin: 2em!important;
+//     display: block!important;
+//     font-size: 15%!important;
+//     outline: red!important;
+// }
+
+// /* Formatando datas e itens da data das postagens*/
+// //.quarto-title{//título "Postagens"
+//   // .blog-post-title{
+//   //     color:red!important;
+//   //     font-size:36px;
+//   // }
+
+
+// .quarto-listing .listing-date{/*data*/
+//   color: red!important;
+//   font-family: "Red Hat Text", "Source Sans Pro"!important;
+// }
+// .quarto-listing .listing-author{/* autor*/
+//   color: red!important;
+//   font-family: "Red Hat Text", "Source Sans Pro"!important;
+// }
+// .quarto-listing .listing-title{
+//   color: red!important;
+//   font-family: "Red Hat Text", "Source Sans Pro"!important;
+// }
+
+// .quarto-listing-category-title{
+//   color: red!important;
+// }
+
+
+// /* Formatando os cards (blog-sidebar)*/
+// .column-margin figcaption, .margin-caption, div.aside, aside, .column-margin {
+//   color: black!important;
+//   font-size: .825rem;
+// }
+
+
+// /* Formatando as postagens */
+// // #title-block-header.quarto-title-block.default .quarto-title .title {
+// //   margin-bottom: 0;
+// //   color: rgb(0, 0, 0);
+// // }
+
+
+// // Alinhamento do título do Banner
+
+
+
+
+
+
+
+
+
+
+// // .nav-fixed fullcontent quarto-light{
+// //   color:red
+// // }
+
+// // .quarto-title > h1.title {
+// //   opacity: 0 !important;
+// // }
+
+// // Formatando hero
+// // .hero-heading{
+// //   color: red !important;
+// // }
+
+// // .div.about-content {
+// //   color: red!important;
+// // }
+
+// // div.abstract-title {
+// //   visibility: hidden;
+// // }
+
+// // div.abstract-title:before {
+// //   content: "How to cite";
+// //   visibility: visible;
+// // }
+
+
+// .about-contents .p .li{
+//   color: #20c997 !important;
+
+// }
+
+#miniBio {
+  // font-family: 'CMUSerifRoman','sans-serif' !important;
+  // font-size: 20px!important;
+  color: #22b24c !important;
+  // border: 5px solid grey;
+  // background-color: #ccc;
+  width: 600px;
+  margin: 00px;
+  padding: 0px;
+  margin-left: 0em;
+
+}
+

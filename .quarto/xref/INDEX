@@ -1,0 +1,47 @@
+{
+  "about.qmd": {
+    "about.html": "98489d74"
+  },
+  "about_template.qmd": {
+    "about_template.html": "e3e554fd"
+  },
+  "blog/post-with-code/index.qmd": {
+    "index.html": "ae3db005"
+  },
+  "blog/welcome/index.qmd": {
+    "index.html": "c9655ced"
+  },
+  "blog.qmd": {
+    "blog.html": "5407e18f"
+  },
+  "index.qmd": {
+    "index.html": "2105d252"
+  },
+  "projects/index.qmd": {
+    "index.html": "04a59e12"
+  },
+  "projects/pkg_1/index.qmd": {
+    "index.html": "9117a011"
+  },
+  "projects/pkg_2/index.qmd": {
+    "index.html": "cffc3a47"
+  },
+  "projects/project_1/index.qmd": {
+    "index.html": "f143e89d"
+  },
+  "projects/project_2/index.qmd": {
+    "index.html": "3c9bf16f"
+  },
+  "talks/index.qmd": {
+    "index.html": "2e5c8ce9"
+  },
+  "talks/talk_1/index.qmd": {
+    "index.html": "24a18065"
+  },
+  "talks/talk_2/index.qmd": {
+    "index.html": "aa559fd9"
+  },
+  "blog/Introdução ao R/index.qmd": {
+    "index.html": "d13d2933"
+  }
+}

@@ -1,0 +1,41 @@
+---
+title: "William Barbosa"
+image: perfil2.jpg
+about:
+  id: hero-heading
+  template: trestles
+  # image-width: 30em
+  image-shape: rectangle
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+title-block-banner: false
+# page-layout: custom
+sidebar: false
+---
+
+
+<!-- hero-heading -->
+::: {#hero-heading}
+
+
+Olá, meu nome é **William Barbosa**.
+
+<!-- <div class="p0"> -->
+Doutor em Economia Aplicada pela ESALQ/USP (2021). Mestre em Economia pela Universidade Federal de Santa Maria - RS/UFSM (2017). Especialista em Agronegócio pela Universidade de São Paulo (2021) e Especialista em Data Science e Analytics pela Universidade de São Paulo (2023). Bacharel em Ciências Econômicas pela Universidade Estadual de Ponta Grossa - UEPG (2014).
+
+A linha de pesquisa atual envolve Economia Regional, Agricultura e Desflorestamento. Possui especialidade em análise de dados; econometria com análises espaciais, séries temporais; dados em painel; modelos com dados de contagem, variável dependente limitada (Logit e Probit); Machine Learning e Mineração de Texto. Manipulação em ambiente Big Data, programação para análise de dados e modelagem em R, Python e Stata.
+<!-- </div> -->
+
+Este site é destinado a todos que possuem interesse na divulgação científica, estudos relacionados à programação e o hype do momento *Data Science*. Neste site, dificilmente serão utilizadas linguagens da "moda" (rsrs print('python & java script')), sendo assim, o foco será no conteúdo a ser transmitido.
+
+:::
+
+
