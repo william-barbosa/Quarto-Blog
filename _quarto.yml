@@ -8,7 +8,7 @@ website:
 
 
   page-footer:
-    left: "&copy; Copyright 2022, Author"
+    left: "&copy; Copyright 2023, William Barbosa"
     right: "Essa página foi construída com [Quarto](https://quarto.org/)."
 
   navbar:

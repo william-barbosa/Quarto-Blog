@@ -268,19 +268,39 @@ ul.task-list li input[type="checkbox"] {
     </header>
 
 
-<p>Esse é o primeiro post para instalação e configuração do R. Para que seja possível a programação em R no VS Code é necessário adotar alguns passos inicias:</p>
+<p>Este post tem por objetivo o auxílio para instalação e configuração do R. É notável que atualmente existem inúmeros benefícios para a utilização da IDE <a href="https://posit.co/download/rstudio-desktop/">Rstudio</a>, porém, existem muitos outros problemas e gargalos na sua utilização comprometem a produtividade do trabalho no dia a dia. Em 2017 o Stack Overflow lançou uma <a href="https://insights.stackoverflow.com/survey/2021#most-popular-technologies-new-collab-tools">pesquisa</a> e constatou que 71.06% dos programadores utilizavam o VS Code e apenas 3.92% o RStudio. Portanto, esse fato revela não apenas a popularidade, mas revela que algum benefício deve existir para a utilização dessa IDE.</p>
+<p>Para que seja possível a programação em R no VS Code é necessário adotar alguns passos inicias:</p>
 <ol type="1">
-<li>Baixar o R interpretador via CRAN (colocar link);</li>
-<li>Realizar a instalação e localizar o referido camimho;</li>
-<li>Instalar via Rgui os seguintes pacotes e demais procedimentos: 3.1 install.packages(‘SSS’). Nessa etapa será solicitado para selecionar o espelho do CRAN para baixar os pacotes (é indicado que o usuário selecione a opção mais próxima.);</li>
-<li>Instalar o VS Code (colocar link);</li>
+<li>Baixar o R interpretador via <a href="https://cran.r-project.org/">CRAN</a>;</li>
+<li>Realizar a instalação e localizar o referido camimho. É indicado que seja sempre instalado em uma pasta que não necessite de permissão para modificação ou instalação de pacotes; No caso, a instalação pode ser realizada em <code>C:\Users\seu_usario\Documents\R-4.3.2</code>;</li>
+<li>Abrir o R via terminal (<code>C:\Users\seu_usario\Documents\R-4.3.2\bin\x64\R.exe</code>) e instalar os seguintes pacotes:</li>
 </ol>
-<p><img src="R_cran.jpg" class="img-fluid"></p>
-<p>Teste <code>image</code>.</p>
-<p>#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</p>
-<p>git remote set-url origin https://exampleuser:b8c28127***63gu56b2d@github.com/exampleuser/exampleproject.git</p>
-<p>https://{william-barbosa}:{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}<span class="citation" data-cites="github.com">@github.com</span></p>
-<p>https://github.com/william-barbosa/Quarto-Blog.git</p>
+<ul>
+<li><code>install.packages("languageserver")</code>. Nessa etapa será solicitado para selecionar o espelho do CRAN para baixar os pacotes (é indicado que o usuário selecione a opção mais próxima de sua região.);</li>
+</ul>
+<ol start="4" type="1">
+<li>Instalar o <a href="https://code.visualstudio.com/">VS Code</a>;</li>
+<li>Abrir o VS Code e instalar a extensão própria para o <a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r">R</a> com os seguintes passos:</li>
+</ol>
+<ul>
+<li>Usar o atalho <strong>Ctrl + Shift + X</strong>:<br>
+<img src="ExtensaoR.jpg" class="img-fluid"></li>
+</ul>
+<ol start="6" type="1">
+<li>Posteriormente, deve-se configurar os caminhos editando as configurações. Por ser mais rápido, indica-se o seguinte procedimento:</li>
+</ol>
+<ul>
+<li>Usar o atalho <code>Ctrl + Shift + P</code> e digitar “Preferências” na barra de pesquisa que será aberta, editar o arquivo conforme a segunda imagem, salvar e fechar:<br>
+<img src="abre_settings.png" class="img-fluid"><br>
+<br>
+<img src="configuracoes.png" class="img-fluid"></li>
+</ul>
+<ol start="7" type="1">
+<li>Pronto, se tudo estiver configurado conforme acima, o <code>R</code> já estará pronto para ser aberto no terminal. Para isso, basta clicar em ‘Arquivo’ como na primeira opção abaixo e na segunda opção:<br>
+<img src="Novo_R.png" class="img-fluid"></li>
+</ol>
+<p>A partir de agora é só executar algum código (experimente: <code>print('Olá, mundo!')</code>) e o console do R abrirá automaticamente. Praticamente tudo que um usuário de realiza no RStudio é possível ser realizado no VSCode. Existem outras maneiras a serem exploradas na utilização do R e VSCode, como por exemplo, utilizar o <a href="https://github.com/randy3k/radian">Radian</a> como terminal para executar os códigos em R, sendo que a apresentada neste tutorial foi a maneira mais simples e rápida para a configuração correta.</p>
+<!-- ![](R_cran.jpg) -->
 
 
 
@@ -521,7 +541,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© Copyright 2022, Author</div>   
+    <div class="nav-footer-left">© Copyright 2023, William Barbosa</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
