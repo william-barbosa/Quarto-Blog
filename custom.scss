@@ -62,7 +62,11 @@ $pagination-hover-color:            $white !default;
 $pagination-hover-bg:               $primary !default;
 $pagination-hover-border-color:     $primary !default;
 
+// largura do texto
+$grid-body-width: 900px !default;
 
+// espaço a esquerda
+$grid-margin-width: 300px !default;
 
 /*-- scss:rules --*/
 
@@ -89,9 +93,9 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;70
 
 /* Formatação geral da fonte cores de texto no geral */
 body {
-  font-family: "Red Hat Text", "Source Sans Pro" !important;
-  color: black;
-   background: rgb(255, 255, 255)!important;
+  font-family: "Roboto", "Source Sans Pro" !important;
+  color: $black-Nav;
+   background: white!important;
 }
 
 
@@ -141,60 +145,59 @@ div.quarto-about-trestles .about-entity {
 // Formatação do botão inicial
 .navbar-dark .navbar-brand{
   color: $white!important;
-  font-family: "Red Hat Text", "Source Sans Pro" !important;
+  font-family: "Roboto", "Source Sans Pro" !important;
   font-size: 22px!important;
  }
 
  /* cor quando passa o mouse por cima do botão principal */
 .navbar-dark .navbar-brand:hover{
-    color: green!important;
+    color: $primary!important;
     font-size: 22px!important;
 }
 /* Formataçã de fontes e cores dos itens do navbar*/
 .navbar .navbar-nav li a{
-    color: $white!important;
-    font-family: "Red Hat Text", "Source Sans Pro" !important;
+    // color: $white!important;
+    font-family: "Roboto", "Source Sans Pro" !important;
     font-size: 22px!important;
 }
 
-/* Cor do texto quando passa o mouse por cima do link no header*/
-.navbar .navbar-nav li a:hover{
-    color:green!important;
-}
-
-// .dropdown .dropdown-menu .dropdown-item, .dropdown .dropdown-menu .dropdown-item:hover{
-//   color:red!important;
-// }
-
 /* Cor e formatação quando passar o mouse por cima dos itens do dropdown*/
-.dropdown-menu li:hover {
-color: $black;
-background-color: green!important;
+.navbar .dropdown-item {
+  padding: .4rem .5rem;
+  background: $black-Nav!important;
 }
 
-// Formatação e espaçamento geral do navbar
-// .navbar-brand{
-//    margin-left:50px;
-//     padding-left: 50px;
-// }
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-family: "Roboto", "Source Sans Pro" !important;
+  padding-left: .6rem;
+  padding-right: .6rem;
+  color: white!important;
+}
+
+//cor do hover no navbar
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: $primary!important;
+}
+// hover no dropdown
+.navbar .dropdown-item:hover{
+  color: $primary!important;
+}
+
 
 // Formatando o sidebar
-div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, nav.sidebar.sidebar-navigation:not(.rollup) {
-  background-color: $white;
-  color: $black-Nav!important;
-}
-// .sidebar.sidebar-navigation {
-//   padding-top: 1em;
-//   color: red;
+// div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, nav.sidebar.sidebar-navigation:not(.rollup) {
+//   background-color: red;
+//   color: red!important;
 // }
-.sidebar-navigation a {
-  color: $black-Nav;
-  font-family: "Red Hat Text", "Source Sans Pro" !important;
-}
-div.sidebar-item-container:hover, div.sidebar-item-container:focus {
-  background: green!important;
-}
 
+// .sidebar-navigation a {
+//   color: $black-Nav;
+//   font-family: "Red Hat Text", "Source Sans Pro" !important;
+// }
+// div.sidebar-item-container:hover, div.sidebar-item-container:focus {
+//   background: green!important;
+// }
+// fim do sidebar
 
 
 
@@ -243,27 +246,41 @@ div.sidebar-item-container:hover, div.sidebar-item-container:focus {
 //   font-family: "Red Hat Text", "Source Sans Pro" !important;
 // }
 
+.listing-actions-group {
+  display: flex;
+  border-bottom: 1px solid #dee2e6!important;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+div.quarto-post {
+  display: flex;
+  gap: 2em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #dee2e6!important;
+}
+
 // Formata o título dos posts na lista  do blog
 div.quarto-post .body h3.listing-title, div.quarto-post .body .listing-title.h3 {
   margin-top: 0px;
   margin-bottom: 0px;
   border-bottom: none;
-  color: $black;
-  font-family: "Red Hat Text", "Source Sans Pro" !important;
+  color: $black-Nav;
+  font-family: "Roboto" !important;
   font-weight: bold!important;
 }
 
 div.quarto-post a {
-  color: $black;
-  font-family: "Red Hat Text", "Source Sans Pro" !important;
+  color: $black-Nav;
+  font-family: "Roboto" !important;
   display: flex;
   flex-direction: column;
   text-decoration: none;
 }
 
 .list.quarto-listing-default div:last-of-type {
-  font-family: "Red Hat Text", "Source Sans Pro" !important;
-  color: $black!important;
+  font-family: "Roboto" !important;
+  color: black;
 }
 
 
@@ -456,16 +473,13 @@ div.quarto-post a {
 // // }
 
 
-// // Alinhamento do título do Banner
-
-
-
-
-
-
-
-
-
+#title-block-header {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -1px;
+  border-bottom: 1px solid #dee2e6!important;
+  margin-bottom: 25px;
+}
 
 // // .nav-fixed fullcontent quarto-light{
 // //   color:red
@@ -511,4 +525,18 @@ div.quarto-post a {
   margin-left: 0em;
 
 }
+
+// #hero-heading{
+//     color: red !important;
+//     // padding-right: 10px!important;
+//     // width: 400px;
+//   }
+// #quarto-document-content{
+//   padding-left: 150px!important;
+// }
+
+  // #quarto-content{
+  //   padding-top: 14px;
+  //   padding-left: 50px;
+  // }
 

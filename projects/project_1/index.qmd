@@ -1,7 +1,7 @@
 ---
-title: "project_1"
-categories: [news, code, analysis]
+title: "Análise Espacial do Impacto da Agropecuária na Taxa de Desflorestamento dos Biomas Brasileiros"
+categories: [Análise Espacial, Desflorestamento, Agropecuária]
 image: "image.jpg"
 ---
 
-In this project I use EHR to explore the hospital transfers. 
+O objetivo deste projeto é analisar o impacto da expansão da agropecuária na taxa de desflorestamento a nível de biomas brasileiros.

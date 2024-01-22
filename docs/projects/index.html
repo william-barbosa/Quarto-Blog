@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="This page provides a mix of two types of listing, grouped by id.">
+<meta name="description" content="O objetivo é a apresentação de como as técnicas de machine learning podem ser empregadas para a elaboração de trabalhos acadêmicos e análises. Os projetos listados serão executados com bases de dados públicos, temas variados e sem fins lucrativos, dedicando-se na demonstração para a comunidade interessada na elaboração e divulgação científica.">
 
-<title>William Barbosa - Projects</title>
+<title>William Barbosa - Projetos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../about.html" rel="next">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -72,41 +71,13 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-ehr'] = new List('listing-ehr', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-packages .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-packages'] = new List('listing-packages', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -126,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -142,157 +113,69 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Início</span></a>
-  </li>  
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+ <span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../projects/index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Projetos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Curriculo/William_Barbosa.pdf" rel="" target="">
+ <span class="menu-text">Resumo</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sobre" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Sobre</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-indicações" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Indicações</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-sobre">    
-        <li class="dropdown-header">Texto 1</li>
-        <li class="dropdown-header">Texto 2</li>
-        <li class="dropdown-header">Texto 3</li>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-indicações">    
+        <li>
+    <a class="dropdown-item" href="https://cran.r-project.org/" rel="" target="">
+ <span class="dropdown-text">Use R!</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://docs.anaconda.com/free/anaconda/install/index.html" rel="" target="">
+ <span class="dropdown-text">Anaconda</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://julialang.org/downloads/" rel="" target="">
+ <span class="dropdown-text">Julia</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.qgis.org/pt_BR/site/forusers/download.html" rel="" target="">
+ <span class="dropdown-text">QGIS</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+            <div class="quarto-navbar-tools">
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/index.html">Projetos</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../projects/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Projetos</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">About</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About me</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Publicações</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
- <span class="menu-text">Revistas</span>
-  </li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#grid-listing" id="toc-grid-listing" class="nav-link active" data-scroll-target="#grid-listing">Grid listing</a></li>
-  <li><a href="#table-listing" id="toc-table-listing" class="nav-link" data-scroll-target="#table-listing">Table listing</a>
-  <ul class="collapse">
-  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-<!-- <header id="title-block-header" class="quarto-title-block default page-columns page-full">
-    <div class="quarto-title-banner page-columns page-full">
-      <div class="quarto-title column-body">
-        <h1 class="title">Post With Code</h1>
-                                  <div class="quarto-categories">
-                                                                      </div>
-      </div>
-    </div>
-
-
-    <div class="quarto-title-meta">
-
-        <div>
-        <div class="quarto-title-meta-heading">Autor</div>
-        <div class="quarto-title-meta-contents">
-                        </div>
-      </div>
-
-        <div>
-        <div class="quarto-title-meta-heading">Pulicado em:</div>
-        <div class="quarto-title-meta-contents">
-                    </div>
-      </div>
-
-
-      </div>
-
-
-    </header> -->
-
-    <!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
-<!--
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
--->
-<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
-<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
-
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-    <!-- <div id="title-block-header-title" class="quarto-title page-columns page-full page-layout-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
-        <div class="quarto-title-banner page-columns page-full">
-
-
-        <div class="quarto-title column-body">
-    <h1 class="title">Projects</h1>
-            </div>
+<h1 class="title">Projetos</h1>
 </div>
 
-    
+<div>
+  <div class="description">
+    <p>O objetivo é a apresentação de como as técnicas de machine learning podem ser empregadas para a elaboração de trabalhos acadêmicos e análises. Os projetos listados serão executados com bases de dados públicos, temas variados e sem fins lucrativos, dedicando-se na demonstração para a comunidade interessada na elaboração e divulgação científica.</p>
+  </div>
+</div>
 
-    <!-- 
+
 <div class="quarto-title-meta">
 
     
@@ -300,50 +183,56 @@ ul.task-list li input[type="checkbox"] {
     
   </div>
   
- -->
 
+</header>
 
-    
-
-
-    </header>
-
-
-<section id="grid-listing" class="level2">
-<h2 class="anchored" data-anchor-id="grid-listing">Grid listing</h2>
-<p>This is an example of <strong>grid</strong> listing. You can specify the content in the <code>yaml</code> header in the <code>.qmd</code> file.</p>
-<p>It is convenient to use <code>id</code> to link to multiple folders.</p>
 <div id="listing-ehr" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="news,code,analysis" data-listing-file-modified-sort="1699802267907" data-listing-reading-time-sort="1">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-categories="Análise Espacial,Desflorestamento,Agropecuária" data-listing-file-modified-sort="1705673041216" data-listing-reading-time-sort="1">
 <a href="../projects/project_1/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="../projects/project_1/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
+<div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-project_1
+Análise Espacial do Impacto da Agropecuária na Taxa de Desflorestamento dos Biomas Brasileiros
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Análise Espacial'); return false;">
+Análise Espacial
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Desflorestamento'); return false;">
+Desflorestamento
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Agropecuária'); return false;">
+Agropecuária
+</div>
+</div>
 <div class="card-text listing-description">
-In this project I use EHR to explore the hospital transfers.
+O objetivo deste projeto é analisar o impacto da expansão da agropecuária na taxa de desflorestamento a nível de biomas brasileiros.
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="news,code,analysis" data-listing-file-modified-sort="1699802267913" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="1" data-categories="Indústria,Análise Espacial,Regional" data-listing-file-modified-sort="1705672838571" data-listing-reading-time-sort="1">
 <a href="../projects/project_2/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="../projects/project_2/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
+<div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-project_2
+Desindustrialização Brasileira
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Indústria'); return false;">
+Indústria
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Análise Espacial'); return false;">
+Análise Espacial
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Regional'); return false;">
+Regional
+</div>
+</div>
 <div class="card-text listing-description">
-In this project I work on Machine Learning methods to predict in-hospital mortality.
+O objetivo deste projeto é a análise da evidência da desindustrialização a nível regional no Brasil a partir de técnicas e análises espciais.
 </div>
 </div>
 </div>
@@ -354,53 +243,26 @@ In this project I work on Machine Learning methods to predict in-hospital mortal
 No matching items
 </div>
 </div>
-</section>
-<section id="table-listing" class="level2">
-<h2 class="anchored" data-anchor-id="table-listing">Table listing</h2>
-<p>This is an example of <strong>table</strong> listing.</p>
-<section id="packages" class="level3">
-<h3 class="anchored" data-anchor-id="packages">Packages</h3>
-<div id="listing-packages" class="quarto-listing quarto-listing-container-table">
+<section id="artigos-completos-publicados-em-periódicos" class="level2">
+<h2 class="anchored" data-anchor-id="artigos-completos-publicados-em-periódicos">Artigos completos publicados em periódicos</h2>
+<p>CATEIA, JULIO VICENTE; SAVARD, LUC; ALMEIDA, EDIVO OLIVEIRA DE; <strong>BARBOSA, W.</strong> Informality, Trade Facilitation, and Trade Flows: Evidence from Guinea-Bissau. INTERNATIONAL JOURNAL OF ECONOMICS AND FINANCE. , v.14, p.21, 2022.</p>
+<p>CATEIA, J. V.; OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ESTIMAÇÃO DO COMÉRCIO INTERNACIONAL BRASILEIRO EM CLUSTERS. Análise Econômica (UFRGS) on line. , v.39, p.133 - 160, 2021. Referências adicionais: Português.</p>
+<p><strong>BARBOSA, W.</strong>; OLIVEIRA, E. A.; CATEIA, J. V. Farming and Deforestation in MATOPIBA Municipalities: A Spatial Analysis. JOURNAL OF INTERNATIONAL AND GLOBAL ECONOMIC STUDIES., v.14, p.1-14 - , 2021.</p>
+<p>OLIVEIRA, E. A.; FEISTEL, P. R.; <strong>BARBOSA, W.</strong> O Pecado Original Doméstico: Uma Análise Da Experiência Brasileira Entre 2001 A 2016. ESTUDO &amp; DEBATE (ONLINE)., v.26, p.7 - 33, 2019.</p>
+<p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ; CATEIA, J. V.; FEISTEL, P. R. AS EXPORTAÇÕES BRASILEIRAS POR GRAU DE ELABORAÇÃO ENTRE 1980 E 2015: APLICAÇÃO DO MODELO EATON-KORTUM À LUZ DA TEORIA CEPALINA. Análise Econômica (UFRGS) on-line. , v.36, p.179 - 201, 2018.</p>
+<p>SILVA, J. V. S.; <strong>BARBOSA, W.</strong> ; FREITAS, C. A. Complementaridade Comercial entre Brasil e América do Sul: Aplicação do modelo gravitacional em dados em painel para o mercado de bens de alta intensidade tecnológica. RBEE. REVISTA BRASILEIRA DE ECONOMIA DE EMPRESAS. , v.18, p.43 - 63, 2018.</p>
+<p>SILVA, J. V. S.; <strong>BARBOSA, W.</strong> A América do Sul no Dinamismo Comercial Brasileiro: Um Estudo Das Complementaridades Por Intensidade Tecnológica. OBSERVATORIO DE LA ECONOMÍA LATINOAMERICANA. , v.3, p.1-17 - , 2017.</p>
+<p><strong>BARBOSA, W.</strong> ; OLIVEIRA, E. A.; FREITAS, C. A.; SILVA, J. V. S. UMA ANÁLISE DA CURVA DE KUZNETS PARA OS MUNICÍPIOS BRASILEIROS (1991, 2000, 2010). ECONOMIA &amp; REGIÃO. , v.5, p.65 - 83, 2017.</p>
+<p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ; ROHENKOHL, J. E. CRISE SUBPRIME: UMA EXPLICAÇÃO COM BASE NO CONCEITO DE DIREITOS DE PROPRIEDADE. Revista da FAE. , v.19, p.52 - 74, 2016.</p>
+<p><strong>BARBOSA, W.</strong> ; OLIVEIRA, E. A.; FREITAS, C. A.; FEISTEL, P. R. MIGRAÇÕES INTERESTADUAIS: UMA APLICAÇÃO DO MODELO GRAVITACIONAL PARA OS ESTADOS BRASILEIROS. Revista Brasileira de Estudos Regionais e Urbanos. , v.10, p.156 - 176, 2016.</p>
+<p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ; FREITAS, C. A. Ordem e caos: um conceito alternativo de mercado. Estudos do CEPE. , p.04 - , 2016.</p>
+<p><strong>BARBOSA, W.</strong> ; PELINSKI, A. R.; CARMO, A. S. S. Existe desindustrialização no Estado do Paraná? um teste empírico para o período de 1996 a 2012. INFORME GEPEC (ONLINE). , v.19, p.55 - 79, 2015.</p>
+<!-- ## Eventos
 
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Title
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1666666800000" data-listing-file-modified-sort="1699802267898" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="pkg_1" data-listing-filename-sort="index.qmd">
-<td>
-<a href="../projects/pkg_1/index.html" class="title listing-title">pkg_1</a>
-</td>
-<td>
-<span class="listing-description">This package does this.</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="news,code,analysis" data-listing-date-sort="1666666800000" data-listing-file-modified-sort="1699802267902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="pkg_2" data-listing-filename-sort="index.qmd">
-<td>
-<a href="../projects/pkg_2/index.html" class="title listing-title">pkg_2</a>
-</td>
-<td>
-<span class="listing-description">This package does this.</span>
-</td>
-</tr>
-</tbody>
-
-</table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+## Revisão de períodicos -->
 
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -637,15 +499,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../about.html" class="pagination-link">
-        <span class="nav-page-text">About me</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

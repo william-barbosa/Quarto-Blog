@@ -1,13 +1,15 @@
 {
   "listingMap": {
+    "Artigos\\index.qmd": [
+      "project_1",
+      "project_2"
+    ],
     "blog.qmd": [
       "blog"
     ],
     "projects\\index.qmd": [
       "project_1",
-      "project_2",
-      "pkg_1",
-      "pkg_2"
+      "project_2"
     ],
     "talks\\index.qmd": [
       "talk_1",

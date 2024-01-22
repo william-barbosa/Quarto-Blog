@@ -1,7 +1,9 @@
 ---
-title: "project_2"
-categories: [news, code, analysis]
+title: "Desindustrialização Brasileira"
+categories: [Indústria, Análise Espacial, Regional]
 image: "image.jpg"
 ---
 
-In this project I work on Machine Learning methods to predict in-hospital mortality. 
+O objetivo deste projeto é a análise da evidência da desindustrialização a nível regional no Brasil a partir de técnicas e análises espciais.
+
+- Em desenvolvimento

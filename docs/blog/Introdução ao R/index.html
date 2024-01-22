@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="William Barbosa">
+<meta name="description" content="Instalando e configurando o R e Visual Studio Code">
 
-<title>William Barbosa - Introdução ao R</title>
+<title>William Barbosa - VS Code e R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -80,200 +81,120 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Início</span></a>
-  </li>  
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+ <span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html" rel="" target="">
+ <span class="menu-text">Projetos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Curriculo/William_Barbosa.pdf" rel="" target="">
+ <span class="menu-text">Resumo</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sobre" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Sobre</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-indicações" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Indicações</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-sobre">    
-        <li class="dropdown-header">Texto 1</li>
-        <li class="dropdown-header">Texto 2</li>
-        <li class="dropdown-header">Texto 3</li>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-indicações">    
+        <li>
+    <a class="dropdown-item" href="https://cran.r-project.org/" rel="" target="">
+ <span class="dropdown-text">Use R!</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://docs.anaconda.com/free/anaconda/install/index.html" rel="" target="">
+ <span class="dropdown-text">Anaconda</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://julialang.org/downloads/" rel="" target="">
+ <span class="dropdown-text">Julia</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.qgis.org/pt_BR/site/forusers/download.html" rel="" target="">
+ <span class="dropdown-text">QGIS</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+            <div class="quarto-navbar-tools">
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Introdução ao R</li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../projects/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Projetos</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">About</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar seção">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About me</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Publicações</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Alternar seção">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
- <span class="menu-text">Revistas</span>
-  </li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    </div>
-<!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
-
-<!-- <header id="title-block-header" class="quarto-title-block default page-columns page-full">
-    <div class="quarto-title-banner page-columns page-full">
-      <div class="quarto-title column-body">
-        <h1 class="title">Post With Code</h1>
-                                  <div class="quarto-categories">
-                                                                        <div class="quarto-category">R</div>
-                                                                        <div class="quarto-category">VS Code</div>
-                                                                      </div>
-      </div>
-    </div>
-
-
-    <div class="quarto-title-meta">
-
-        <div>
-        <div class="quarto-title-meta-heading">Autor</div>
-        <div class="quarto-title-meta-contents">
-                    <div class="quarto-category">William Barbosa</div>
-                        </div>
-      </div>
-
-        <div>
-        <div class="quarto-title-meta-heading">Pulicado em:</div>
-        <div class="quarto-title-meta-contents">
-                        <p class="date">15 de novembro de 2023</p>
-                    </div>
-      </div>
-
-
-      </div>
-
-
-    </header> -->
-
-    <!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
-<!--
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
--->
-<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
-<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
-
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
-    <!-- <div id="title-block-header-title" class="quarto-title page-columns page-full page-layout-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
-        <div class="quarto-title-banner page-columns page-full">
-
-
-        <div class="quarto-title column-body">
-    <h1 class="title">Introdução ao R</h1>
-                    <div class="quarto-categories">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">VS Code e R</h1>
+                  <div>
+        <div class="description">
+          <p>Instalando e configurando o R e Visual Studio Code</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">R</div>
                 <div class="quarto-category">VS Code</div>
               </div>
-              </div>
-</div>
-
-        <!-- <div>
-      <div id="quarto-title-meta" class="quarto-title-meta-heading">
-        Autor: William Barbosa <br>
-        Data: 15 de novembro de 2023
-      </div>
-    </div> -->
-    <div class="grid">
-        <div class="g-col-6 g-col-md-4">Autor: William Barbosa </div>
-        <div class="g-col-6 g-col-md-4">Data: 15 de novembro de 2023</div>
-        <div class="g-col-6 g-col-md-4"></div>
-      </div>
-    
-
-    <!-- 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Autor</div>
-    <div class="quarto-title-meta-contents">
-             <p>William Barbosa </p>
-          </div>
+                  </div>
   </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Data de Publicação</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">15 de novembro de 2023</p>
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor</div>
+      <div class="quarto-title-meta-contents">
+               <p>William Barbosa </p>
+            </div>
     </div>
-  </div>
-  
+      
+      <div>
+      <div class="quarto-title-meta-heading">Data de Publicação</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">15 de novembro de 2023</p>
+      </div>
+    </div>
     
-  </div>
-  
- -->
-
-
+      
+    </div>
     
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
+  <li><a href="#primeiros-passos" id="toc-primeiros-passos" class="nav-link" data-scroll-target="#primeiros-passos">Primeiros passos</a></li>
+  <li><a href="#configurações-adicionais" id="toc-configurações-adicionais" class="nav-link" data-scroll-target="#configurações-adicionais">Configurações adicionais</a></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão">Conclusão</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-    </header>
 
 
-<p>Este post tem por objetivo o auxílio para instalação e configuração do R. É notável que atualmente existem inúmeros benefícios para a utilização da IDE <a href="https://posit.co/download/rstudio-desktop/">Rstudio</a>, porém, existem muitos outros problemas e gargalos na sua utilização comprometem a produtividade do trabalho no dia a dia. Em 2017 o Stack Overflow lançou uma <a href="https://insights.stackoverflow.com/survey/2021#most-popular-technologies-new-collab-tools">pesquisa</a> e constatou que 71.06% dos programadores utilizavam o VS Code e apenas 3.92% o RStudio. Portanto, esse fato revela não apenas a popularidade, mas revela que algum benefício deve existir para a utilização dessa IDE.</p>
+<section id="objetivo" class="level1">
+<h1>Objetivo</h1>
+<p>Este post tem por objetivo o auxílio para instalação e configuração do R.</p>
+</section>
+<section id="primeiros-passos" class="level1">
+<h1>Primeiros passos</h1>
+<p>É notável que atualmente existem inúmeros benefícios para a utilização da IDE <a href="https://posit.co/download/rstudio-desktop/">Rstudio</a>, porém, existem muitos outros problemas e gargalos na sua utilização comprometem a produtividade do trabalho no dia a dia. Em 2023 o Stack Overflow lançou uma <a href="https://survey.stackoverflow.co/2023/#worked-with-vs-want-to-work-with-new-collab-tools-worked-want">pesquisa</a> e constatou que 73.71% programadores tinham o VS Code como IDE preferido e apenas 2.71% o RStudio. Portanto, esse fato revela não apenas a popularidade, mas revela que existem uma série de benefícios e facilidades na utilização dessa IDE.</p>
 <p>Para que seja possível a programação em R no VS Code é necessário adotar alguns passos inicias:</p>
 <ol type="1">
 <li>Baixar o R interpretador via <a href="https://cran.r-project.org/">CRAN</a>;</li>
-<li>Realizar a instalação e localizar o referido camimho. É indicado que seja sempre instalado em uma pasta que não necessite de permissão para modificação ou instalação de pacotes; No caso, a instalação pode ser realizada em <code>C:\Users\seu_usario\Documents\R-4.3.2</code>;</li>
-<li>Abrir o R via terminal (<code>C:\Users\seu_usario\Documents\R-4.3.2\bin\x64\R.exe</code>) e instalar os seguintes pacotes:</li>
+<li>Realizar a instalação e localizar o referido camimho. É indicado que seja sempre instalado em uma pasta que não necessite de permissão para modificação ou instalação de pacotes; No caso, a instalação pode ser realizada em <code>C:\Users\seu_usuario\Documents\R-4.3.2</code>;</li>
+<li>Abrir o R via terminal (<code>C:\Users\seu_usuario\Documents\R-4.3.2\bin\x64\R.exe</code>) e instalar os seguintes pacotes:</li>
 </ol>
 <ul>
 <li><code>install.packages("languageserver")</code>. Nessa etapa será solicitado para selecionar o espelho do CRAN para baixar os pacotes (é indicado que o usuário selecione a opção mais próxima de sua região.);</li>
@@ -299,10 +220,19 @@ ul.task-list li input[type="checkbox"] {
 <li>Pronto, se tudo estiver configurado conforme acima, o <code>R</code> já estará pronto para ser aberto no terminal. Para isso, basta clicar em ‘Arquivo’ como na primeira opção abaixo e na segunda opção:<br>
 <img src="Novo_R.png" class="img-fluid"></li>
 </ol>
-<p>A partir de agora é só executar algum código (experimente: <code>print('Olá, mundo!')</code>) e o console do R abrirá automaticamente. Praticamente tudo que um usuário de realiza no RStudio é possível ser realizado no VSCode. Existem outras maneiras a serem exploradas na utilização do R e VSCode, como por exemplo, utilizar o <a href="https://github.com/randy3k/radian">Radian</a> como terminal para executar os códigos em R, sendo que a apresentada neste tutorial foi a maneira mais simples e rápida para a configuração correta.</p>
+<p>A partir de agora é só executar algum código (experimente: <code>print('Olá, mundo!')</code>) e o console do R abrirá automaticamente. Praticamente, tudo que um usuário de realiza com o RStudio é possível ser realizado com o VSCode. Existem outras maneiras a serem exploradas na utilização do R e VSCode, como por exemplo, utilizar o <a href="https://github.com/randy3k/radian">Radian</a> como terminal para executar os códigos em R, sendo que a abordagem apresentada neste tutorial foi a maneira mais simples e rápida para a configuração correta.</p>
+</section>
+<section id="configurações-adicionais" class="level1">
+<h1>Configurações adicionais</h1>
+<p>Instalar os pacotes larguageserver e httpgd.</p>
+</section>
+<section id="conclusão" class="level1">
+<h1>Conclusão</h1>
+<p>Este post buscou introduzir e exemplificar o procedimento para a instalação e configuração básica do R no VS Code.</p>
 <!-- ![](R_cran.jpg) -->
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
