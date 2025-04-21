@@ -124,7 +124,70 @@
     "href": "blog/Classes e Objetos/index.html",
     "title": "Introdução ao R: Funções, Objetos e Classes",
     "section": "",
-    "text": "Objetivo\nEste post tem por objetivo o auxílio para introdução ao R.\n\n\nIntrodução\nO R é uma linguagem de programação e ambiente de software amplamente utilizado para análise estatística e computação gráfica (e muito mais!). Sua história remonta aos anos 90, quando foi criado por Ross Ihaka e Robert Gentleman na Universidade de Auckland, na Nova Zelândia. O R foi inspirado na linguagem S desenvolvida por John Chambers na Bell Labs, uma linguagem também voltada para estatísticas e análises de dados. O nome “R” foi escolhido como uma homenagem a essas duas influências (a linguagem S e os próprios criadores, Ross e Robert), mas também porque a letra “R” remete à palavra “research” (pesquisa), refletindo o objetivo da linguagem.\nDesde a sua criação, o R cresceu consideravelmente e se tornou uma das linguagens mais populares para análise de dados, especialmente em estatísticas e ciência de dados. Ao longo dos anos, a comunidade de usuários e desenvolvedores do R se expandiu e contribuiu com um vasto conjunto de pacotes, bibliotecas e recursos que estendem as funcionalidades da linguagem. Em 2023, existem 20.249 pacotes disponíveis via CRAN.\nUma das principais vantagens do R é a sua open-source, ou seja, é de código aberto e gratuito, o que permitiu uma adoção rápida e um contínuo aprimoramento. Hoje, o R é utilizado por cientistas, economistas, estatísticos, analistas de dados e até profissionais de áreas como saúde e marketing, graças à sua grande flexibilidade e poder para realizar análises complexas e visualizações de dados de maneira eficiente.\nNo R, a programação é orientada principalmente a funções e objetos. Na minha opinião, o paradigma de programação no R é um confusão entre programação funcional e orientada a objetos, o que o torna único em termos de flexibilidade e poder para análise de dados. Nessa linguagem, um objeto é uma instância de uma classe. Eles podem ser qualquer coisa, desde um vetor numérico simples até estruturas complexas como data frames ou modelos estatísticos. Objetos encapsulam dados e métodos que operam sobre esses dados, permitindo que o usuário crie soluções mais modularizadas e reutilizáveis.\nQuando é criado um objeto no R, se cria uma estrutura que contém informações (atributos) e comportamentos (funções) que podem ser aplicados ao dados. A manipulação de objetos é realizada por meio de funções, que definem o que pode ser feito com os dados dentro do objeto.\n\n\nFunções\nFormalmente, as linhas digitadas são blocos de código que realizam operações e retornam resultados, e são frequentemente aplicadas a objetos. O R tem uma abordagem funcional muito forte, e funções podem ser usadas para realizar transformações em dados, calcular estatísticas, ajustar modelos e até mesmo criar novos tipos de objetos. Abaixo é um exemplo de função anônima em R:\n\n# Exemplo de comentário\n\n# Exemplo de função\nminha_funcao &lt;- \\(x, y) {\n  return(x + y)\n}\n\n# Ou em versões mais recentes do R ela pode ser declarada como\nminha_funcao &lt;- \\(x, y) {\n  return(x + y)\n}\n\nminha_funcao(2,5)\n\n[1] 7"
+    "text": "Este post tem por objetivo o auxílio para introdução ao R."
+  },
+  {
+    "objectID": "blog/Classes e Objetos/index.html#numeric-e-integer",
+    "href": "blog/Classes e Objetos/index.html#numeric-e-integer",
+    "title": "Introdução ao R: Funções, Objetos e Classes",
+    "section": "Numeric e Integer",
+    "text": "Numeric e Integer\nSão tipos de dados usados para representar números. O tipo numeric é o tipo de dado usado para representar números reais (ou de ponto flutuante). Esses números podem ser positivos ou negativos e podem ter casas decimais. Já integer apenas números inteiros;"
+  },
+  {
+    "objectID": "blog/Classes e Objetos/index.html#character",
+    "href": "blog/Classes e Objetos/index.html#character",
+    "title": "Introdução ao R: Funções, Objetos e Classes",
+    "section": "Character",
+    "text": "Character\nO tipo character é usado para armazenar texto (strings). Qualquer valor de texto entre aspas simples (’) ou duplas (“) é considerado um vetor de caracteres;"
+  },
+  {
+    "objectID": "blog/Classes e Objetos/index.html#logical",
+    "href": "blog/Classes e Objetos/index.html#logical",
+    "title": "Introdução ao R: Funções, Objetos e Classes",
+    "section": "Logical",
+    "text": "Logical\nO tipo logical, também conhecido como booleano, é usado para representar valores lógicos, ou seja, verdadeiro (TRUE) ou falso (FALSE). Em R ele também pode ser abreviado com T ou F. Esse tipo de variável pode ser usadas em operações matemáticas, onde TRUE é tratado como 1 e FALSE como 0, podendo ser somado ou tabulado."
+  },
+  {
+    "objectID": "blog/Classes e Objetos/index.html#vector",
+    "href": "blog/Classes e Objetos/index.html#vector",
+    "title": "Introdução ao R: Funções, Objetos e Classes",
+    "section": "Vector",
+    "text": "Vector\nUm vetor é uma sequência de valores do mesmo tipo atômico, tais como números ou strings. Formalmente, tipo vector é uma estrutura que armazena uma sequência de elementos do mesmo tipo."
+  },
+  {
+    "objectID": "blog/Classes e Objetos/index.html#factor",
+    "href": "blog/Classes e Objetos/index.html#factor",
+    "title": "Introdução ao R: Funções, Objetos e Classes",
+    "section": "Factor",
+    "text": "Factor\nOs fatores são usados para representar variáveis categóricas em R. Eles são úteis quando você tem um conjunto de dados com variáveis que têm um número limitado de categorias ou níveis (como “sim” e “não”, ou “baixo”, “médio”, “alto”). Fatores permitem que essas categorias sejam tratadas de maneira eficiente, especialmente para modelos estatísticos."
+  },
+  {
+    "objectID": "blog/Classes e Objetos/index.html#list",
+    "href": "blog/Classes e Objetos/index.html#list",
+    "title": "Introdução ao R: Funções, Objetos e Classes",
+    "section": "List",
+    "text": "List\nAo contrário dos vetores, as listas podem conter elementos de diferentes tipos atômicos. Ou seja, uma lista pode armazenar números, strings, vetores, matrizes, entre outros, em um único objeto. As listas são muito úteis para combinar diferentes tipos de dados."
+  },
+  {
+    "objectID": "blog/Classes e Objetos/index.html#matrix",
+    "href": "blog/Classes e Objetos/index.html#matrix",
+    "title": "Introdução ao R: Funções, Objetos e Classes",
+    "section": "Matrix",
+    "text": "Matrix\nUma matriz é uma estrutura de dados bidimensional (2D) que contém elementos de um único tipo atômico. As matrizes são basicamente tabelas, onde as linhas e as colunas possuem um formato regular, e todos os dados são do mesmo tipo."
+  },
+  {
+    "objectID": "blog/Classes e Objetos/index.html#data-frame",
+    "href": "blog/Classes e Objetos/index.html#data-frame",
+    "title": "Introdução ao R: Funções, Objetos e Classes",
+    "section": "Data Frame",
+    "text": "Data Frame\nUm data frame é uma das estruturas de dados mais usadas em R, especialmente para análise de dados. Ele é semelhante a uma tabela, onde cada coluna pode ser de um tipo de dado diferente (por exemplo, números, textos, lógicos). Ao contrário de uma matriz, as colunas de um data frame podem conter diferentes tipos de dados. Também existe o tibble que é uma versão mais moderna e eficiente do data.frame, com recursos aprimorados para trabalhar com dados tabulares."
+  },
+  {
+    "objectID": "blog/Classes e Objetos/index.html#outros-tipos",
+    "href": "blog/Classes e Objetos/index.html#outros-tipos",
+    "title": "Introdução ao R: Funções, Objetos e Classes",
+    "section": "Outros tipos",
+    "text": "Outros tipos\nExistem muitos outros tipos, tais como Date e POSIXt que são utilizados para armazenar datas e horários. Os tipos Date são usados para armazenar datas (como 2023-04-21), enquanto os tipos POSIXt são usados para armazenar datas e horários, como ‘2020-04-21 12:00:00’.\nNULL: O valor ‘NULL’ é um tipo especial que representa a ausência de um valor ou a falta de um objeto.\nNA: O valor ‘NA’ é usado para representar valores ausentes ou desconhecidos em dados. Pode ocorrer em qualquer tipo de dado (numérico, lógico, caractere, etc.) e é tratado de maneira especial em R.\ncomplex: O R representa números complexos, que possuem uma parte real e uma parte imaginária (i). Eu, particularmente nunca utilizei, mas pode ser útil em algum momento."
   },
   {
     "objectID": "talks/talk_1/index.html",

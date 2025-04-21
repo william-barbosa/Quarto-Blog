@@ -6,7 +6,6 @@ description: |
   "Conceitos básicos R"
 date: "2025-04-21"
 categories: [R,VS Code]
-# image: "Rlogo.svg"
 lang: pt
 sidebar: false
 ---
