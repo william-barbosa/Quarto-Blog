@@ -1,0 +1,18 @@
+---
+title: "Classes e Objetos em R"
+title-block-banner: true
+author: "William Barbosa"
+description: |
+  Iniciando análise de dadom com R
+date: "2023-12-15"
+categories: [R,VS Code]
+image: "Rlogo.svg"
+lang: pt
+sidebar: false
+---
+
+# Objetivo
+
+Este post tem por objetivo o auxílio para introdução ao R.
+
+# Ideias iniciais

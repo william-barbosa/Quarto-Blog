@@ -1,9 +1,9 @@
 [
   {
-    "listing": "/talks/index.html",
+    "listing": "/projects/index.html",
     "items": [
-      "/talks/talk_1/index.html",
-      "/talks/talk_2/index.html"
+      "/projects/project_1/index.html",
+      "/projects/project_2/index.html"
     ]
   },
   {
@@ -13,14 +13,15 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/Classes e Objetos/index.html",
       "/blog/Introdução ao R/index.html"
     ]
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/talks/index.html",
     "items": [
-      "/projects/project_1/index.html",
-      "/projects/project_2/index.html"
+      "/talks/talk_1/index.html",
+      "/talks/talk_2/index.html"
     ]
   }
 ]
