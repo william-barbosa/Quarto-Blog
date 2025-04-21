@@ -34,7 +34,7 @@ Doutor em Economia Aplicada pela ESALQ/USP (2021). Mestre em Economia pela Unive
 A linha de pesquisa atual envolve Economia Regional, Agricultura e Desflorestamento. Possui especialidade em análise de dados; econometria com análises espaciais, séries temporais; dados em painel; modelos com dados de contagem, variável dependente limitada (Logit e Probit); Machine Learning e Mineração de Texto. Manipulação em ambiente Big Data, programação para análise de dados e modelagem em R, Python e Stata.
 <!-- </div> -->
 
-Este site é destinado a todos que possuem interesse na divulgação científica, estudos relacionados à programação e o hype do momento *Data Science*. As principais linguagens adotadas são: `R`, `Julia` e `Python`
+Este site é destinado a todos que possuem interesse na divulgação científica, estudos relacionados à programação e o hype do momento *Data Science*. As principais linguagens adotadas são: `R`, `Python` e `Julia`.
 
 :::
 

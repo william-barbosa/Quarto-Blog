@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="William Barbosa">
-<meta name="description" content="Iniciando análise de dadom com R">
+<meta name="description" content="“Conceitos básicos R”">
 
-<title>Classes e Objetos em R – William Barbosa</title>
+<title>Introdução ao R: Funções, Objetos e Classes – William Barbosa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -39,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-07c16812f08c4a1591d6ec4fc46327fa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c6b95746938046b37411e16b027226d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a56cd01f8cdcf43109c34ee5120dcd68.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -135,10 +169,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Classes e Objetos em R</h1>
+      <h1 class="title">Introdução ao R: Funções, Objetos e Classes</h1>
                   <div>
         <div class="description">
-          <p>Iniciando análise de dadom com R</p>
+          <p>“Conceitos básicos R”</p>
         </div>
       </div>
                           <div class="quarto-categories">
@@ -161,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Data de Publicação</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">15 de dezembro de 2023</p>
+        <p class="date">31 de dezembro de 2023</p>
       </div>
     </div>
     
@@ -178,7 +212,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#ideias-iniciais" id="toc-ideias-iniciais" class="nav-link" data-scroll-target="#ideias-iniciais">Ideias iniciais</a></li>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link" data-scroll-target="#introdução">Introdução</a></li>
+  <li><a href="#funções" id="toc-funções" class="nav-link" data-scroll-target="#funções">Funções</a></li>
   </ul>
 </nav>
     </div>
@@ -193,8 +228,35 @@ ul.task-list li input[type="checkbox"] {
 <h1>Objetivo</h1>
 <p>Este post tem por objetivo o auxílio para introdução ao R.</p>
 </section>
-<section id="ideias-iniciais" class="level1">
-<h1>Ideias iniciais</h1>
+<section id="introdução" class="level1">
+<h1>Introdução</h1>
+<p>O R é uma linguagem de programação e ambiente de software amplamente utilizado para análise estatística e computação gráfica (e muito mais!). Sua história remonta aos anos 90, quando foi criado por <a href="https://www.stat.auckland.ac.nz/~ihaka/downloads/R-paper.pdf">Ross Ihaka e Robert Gentleman</a> na Universidade de Auckland, na Nova Zelândia. O R foi inspirado na linguagem S desenvolvida por John Chambers na Bell Labs, uma linguagem também voltada para estatísticas e análises de dados. O nome “R” foi escolhido como uma homenagem a essas duas influências (a linguagem S e os próprios criadores, Ross e Robert), mas também porque a letra “R” remete à palavra “research” (pesquisa), refletindo o objetivo da linguagem.</p>
+<p>Desde a sua criação, o R cresceu consideravelmente e se tornou uma das linguagens mais populares para análise de dados, especialmente em estatísticas e ciência de dados. Ao longo dos anos, a comunidade de usuários e desenvolvedores do R se expandiu e contribuiu com um vasto conjunto de pacotes, bibliotecas e recursos que estendem as funcionalidades da linguagem. Em 2023, existem 20.249 pacotes disponíveis via <a href="https://journal.r-project.org/news/RJ-2023-4-cran/">CRAN</a>.</p>
+<p>Uma das principais vantagens do R é a sua open-source, ou seja, é de código aberto e gratuito, o que permitiu uma adoção rápida e um contínuo aprimoramento. Hoje, o R é utilizado por cientistas, economistas, estatísticos, analistas de dados e até profissionais de áreas como saúde e marketing, graças à sua grande flexibilidade e poder para realizar análises complexas e visualizações de dados de maneira eficiente.</p>
+<p>No R, a programação é orientada principalmente a funções e objetos. Na minha opinião, o paradigma de programação no R é um confusão entre programação funcional e orientada a objetos, o que o torna único em termos de flexibilidade e poder para análise de dados. Nessa linguagem, um objeto é uma instância de uma classe. Eles podem ser qualquer coisa, desde um vetor numérico simples até estruturas complexas como data frames ou modelos estatísticos. Objetos encapsulam dados e métodos que operam sobre esses dados, permitindo que o usuário crie soluções mais modularizadas e reutilizáveis.</p>
+<p>Quando é criado um objeto no R, se cria uma estrutura que contém informações (atributos) e comportamentos (funções) que podem ser aplicados ao dados. A manipulação de objetos é realizada por meio de funções, que definem o que pode ser feito com os dados dentro do objeto.</p>
+</section>
+<section id="funções" class="level1">
+<h1>Funções</h1>
+<p>Formalmente, as linhas digitadas são blocos de código que realizam operações e retornam resultados, e são frequentemente aplicadas a objetos. O R tem uma abordagem funcional muito forte, e funções podem ser usadas para realizar transformações em dados, calcular estatísticas, ajustar modelos e até mesmo criar novos tipos de objetos. Abaixo é um exemplo de função anônima em R:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Exemplo de comentário</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Exemplo de função</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>minha_funcao <span class="ot">&lt;-</span> \(x, y) {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x <span class="sc">+</span> y)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Ou em versões mais recentes do R ela pode ser declarada como</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>minha_funcao <span class="ot">&lt;-</span> \(x, y) {</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x <span class="sc">+</span> y)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">minha_funcao</span>(<span class="dv">2</span>,<span class="dv">5</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7</code></pre>
+</div>
+</div>
 
 
 </section>
