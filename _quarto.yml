@@ -18,8 +18,8 @@ website:
         href: blog.qmd
       - text: "Projetos"
         href: projects/index.qmd
-      - text: "Sobre"
-        href: about.qmd
+      # - text: "Sobre"
+      #   href: about.qmd
       - text: "Currículo"
         href: Curriculo/William_Barbosa.pdf
       - text: "Indicações"
