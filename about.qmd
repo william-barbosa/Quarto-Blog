@@ -1,71 +1,57 @@
 ---
-title: "Quem desenvolve a página WQuant"
-subtitle: "Sobre William Barbosa"
-image: perfil2.jpg
-about:
-  id: about-content
-  template: trestles
-  image-shape: rounded
-  image-width: 15em
-  links:
-    - icon: globe
-      text: WQuant
-      href: https://wquant.com.br/
-    - icon: github
-      text: GitHub
-      href: https://github.com/william-barbosa
-    - icon: mortarboard
-      text: Currículo Lattes
-      href: http://lattes.cnpq.br/9370334825334170
-    - icon: file-earmark-pdf
-      text: Currículo (PDF)
-      href: Curriculo/William_Barbosa.pdf
-    - icon: envelope
-      text: Contato
-      href: mailto:williambarbosa@alumni.usp.br
+title: "Sobre Mim"
+subtitle: "Trajetória Acadêmica, Experiência Profissional e Competências Técnicas"
 title-block-banner: false
-toc: false
+toc: true
 ---
 
-::: {#about-content}
+## Experiência Profissional e Docência
 
-Olá, meu nome é **William Barbosa**.
+- **Consultor de Metodologia de Riscos (ERM Forecasting)** | *Santander Brasil* (2020–Presente)  
+  Desenvolvimento de modelos quantitativos de *stress testing* para predição de indicadores de inadimplência (*Probability of Default – PD* e *Loss Given Default – LGD*), além de modelos de *credit risk rating* e *score*.
+- **Professor Orientador de MBA** | *PECEGE / USP* (2021–Presente)  
+  Orientação de trabalhos de conclusão de curso (*lato sensu*) no MBA em *Data Science & Analytics*.
+- **Professor Orientador e Consultor Externo** | *PECEGE / USP* (2019–2022)  
+  Orientação de trabalhos de conclusão de curso nos MBAs em Agronegócios e Gestão de Negócios, além de consultoria externa e revisão de cálculos de viabilidade econômico-financeira e fluxo de caixa.
 
-Sou Doutor em Economia Aplicada pela **ESALQ/USP** e atuo como Analista Sênior de Metodologia de Riscos (*Senior Risk Methodology Analyst*) em um grande banco global, onde desenvolvo modelos de *stress testing* para previsão de indicadores de inadimplência (*Probability of Default – PD* e *Loss Given Default – LGD*), *rating* e *score* de crédito.
-
-O **WQuant** nasce da intersecção entre a rigorosidade acadêmica e a prática do mercado financeiro. Meu objetivo é utilizar Ciência de Dados para contar histórias sobre a bolsa brasileira e o ambiente macroeconômico, desmistificando a economia com números, não com "achismos".
+---
 
 ## Formação Acadêmica
 
 - **Doutorado em Economia Aplicada** (2017–2021)  
   *Escola Superior de Agricultura "Luiz de Queiroz" – Universidade de São Paulo (ESALQ/USP)*  
-  Tese: *Climate change in agriculture and internal migration in Brazil*
+  **Tese:** *Climate change in agriculture and internal migration in Brazil*
 - **MBA em Data Science & Analytics** (2021–2023)  
-  *USP / PECEGE*  
-  Trabalho final: *Spatial analysis of the deforestation rate in the Cerrado Biome 1985–2017*
+  *Programa de Educação Continuada em Economia e Gestão de Empresas (PECEGE/USP)*  
+  **Monografia:** *Spatial analysis of the deforestation rate in the Cerrado Biome 1985–2017*
 - **MBA em Agronegócios** (2019–2021)  
-  *USP / PECEGE*  
-  Trabalho final: *Analysis of deforestation and agricultural growth in the municipalities of MATOPIBA 2006–2017*
+  *Programa de Educação Continuada em Economia e Gestão de Empresas (PECEGE/USP)*  
+  **Monografia:** *Analysis of deforestation and agricultural growth in the municipalities of MATOPIBA 2006–2017*
 - **Mestrado em Economia e Desenvolvimento** (2015–2017)  
   *Universidade Federal de Santa Maria (UFSM/RS)*  
-  Dissertação: *Migrations in Brazil: An Application of the Gravity Model with Panel Data (2002–2015)*
+  **Dissertação:** *Migrations in Brazil: An Application of the Gravity Model with Panel Data (2002–2015)*
 - **Bacharelado em Ciências Econômicas** (2011–2014)  
-  *Universidade Estadual de Ponta Grossa (UEPG/PR)*
-
-## Experiência Profissional e Docência
-
-- **Analista Sênior de Metodologia de Riscos (ERM Forecasting)** | *Santander Brasil* (2020–Presente)  
-  Desenvolvimento de modelos quantitativos de *stress testing* para predição de *PD* e *LGD*, além de modelos de *credit risk rating* e *score*.
-- **Professor Orientador de MBA** | *PECEGE / USP* (2019–Presente)  
-  Orientação de trabalhos de conclusão de curso (*lato sensu*) nos programas de MBA em *Data Science & Analytics*, Agronegócios e Gestão de Negócios, além de consultoria externa e revisão de viabilidade econômico-financeira e fluxo de caixa.
-
-## Competências Técnicas
-
-- **Linguagens & Ferramentas:** `R`, `Python`, `Julia`, `SQL`, `LaTeX`, `Quarto`, `RMarkdown`, `Shiny`, `Git`, `VS Code`, `RStudio`, `QGIS` e `Stata`.
-- **Modelagem & Métodos:** Econometria de Séries Temporais, Econometria Espacial, Dados em Painel, Modelos de Escolha Discreta (*Logit* / *Probit*), *Machine Learning*, Mineração de Texto (*Text Mining*) e *Web Scraping*.
+  *Universidade Estadual de Ponta Grossa (UEPG/PR)*  
+  **Monografia:** *Empirical Analysis of the Evidence of Deindustrialization in the State of Paraná in the Period from 1996 to 2012*
 
 ---
 
-Acesse o Currículo Completo em PDF [aqui](Curriculo/William_Barbosa.pdf).
+## Competências Técnicas
 
-:::
+- **Linguagens & Programação:** `R` (9+ anos), `LaTeX` (9+ anos), `SQL` (5+ anos), `Python` (4+ anos), `Julia` (2+ anos).
+- **Ferramentas & Ecossistema:** `QGIS` (10+ anos), `RMarkdown` / `Quarto`, `Shiny App`, `Git`, `VS Code`, `RStudio` e `Stata`.
+- **Modelagem & Métodos Quantitativos:**
+  - Econometria de Séries Temporais, Econometria Espacial e Dados em Painel;
+  - Modelos de Variável Dependente Limitada (*Logit* e *Probit*) e Dados de Contagem;
+  - Modelagem de Risco de Crédito (*Stress Testing*, *PD*, *LGD*, *Rating* e *Score*);
+  - *Machine Learning*, Mineração de Texto (*Text Mining*), *Web Scraping* e manipulação em ambiente *Big Data*.
+
+---
+
+## Links e Contato
+
+- **Currículo Completo (PDF):** [Baixar Currículo](Curriculo/William_Barbosa.pdf)
+- **Currículo Lattes:** [http://lattes.cnpq.br/9370334825334170](http://lattes.cnpq.br/9370334825334170)
+- **GitHub:** [https://github.com/william-barbosa](https://github.com/william-barbosa)
+- **Portal WQuant:** [https://wquant.com.br/](https://wquant.com.br/)
+- **E-mail:** [williambarbosa@alumni.usp.br](mailto:williambarbosa@alumni.usp.br)

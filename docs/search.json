@@ -107,30 +107,37 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Quem desenvolve a página WQuant",
+    "title": "Sobre Mim",
     "section": "",
-    "text": "WQuant\n  \n  \n    \n     GitHub\n  \n  \n    \n     Currículo Lattes\n  \n  \n    \n     Currículo (PDF)\n  \n  \n    \n     Contato\n  \n\n  \n  \nOlá, meu nome é William Barbosa.\nSou Doutor em Economia Aplicada pela ESALQ/USP e atuo como Analista Sênior de Metodologia de Riscos (Senior Risk Methodology Analyst) em um grande banco global, onde desenvolvo modelos de stress testing para previsão de indicadores de inadimplência (Probability of Default – PD e Loss Given Default – LGD), rating e score de crédito.\nO WQuant nasce da intersecção entre a rigorosidade acadêmica e a prática do mercado financeiro. Meu objetivo é utilizar Ciência de Dados para contar histórias sobre a bolsa brasileira e o ambiente macroeconômico, desmistificando a economia com números, não com “achismos”.\n\n\n\nDoutorado em Economia Aplicada (2017–2021)\nEscola Superior de Agricultura “Luiz de Queiroz” – Universidade de São Paulo (ESALQ/USP)\nTese: Climate change in agriculture and internal migration in Brazil\nMBA em Data Science & Analytics (2021–2023)\nUSP / PECEGE\nTrabalho final: Spatial analysis of the deforestation rate in the Cerrado Biome 1985–2017\nMBA em Agronegócios (2019–2021)\nUSP / PECEGE\nTrabalho final: Analysis of deforestation and agricultural growth in the municipalities of MATOPIBA 2006–2017\nMestrado em Economia e Desenvolvimento (2015–2017)\nUniversidade Federal de Santa Maria (UFSM/RS)\nDissertação: Migrations in Brazil: An Application of the Gravity Model with Panel Data (2002–2015)\nBacharelado em Ciências Econômicas (2011–2014)\nUniversidade Estadual de Ponta Grossa (UEPG/PR)\n\n\n\n\n\nAnalista Sênior de Metodologia de Riscos (ERM Forecasting) | Santander Brasil (2020–Presente)\nDesenvolvimento de modelos quantitativos de stress testing para predição de PD e LGD, além de modelos de credit risk rating e score.\nProfessor Orientador de MBA | PECEGE / USP (2019–Presente)\nOrientação de trabalhos de conclusão de curso (lato sensu) nos programas de MBA em Data Science & Analytics, Agronegócios e Gestão de Negócios, além de consultoria externa e revisão de viabilidade econômico-financeira e fluxo de caixa.\n\n\n\n\n\nLinguagens & Ferramentas: R, Python, Julia, SQL, LaTeX, Quarto, RMarkdown, Shiny, Git, VS Code, RStudio, QGIS e Stata.\nModelagem & Métodos: Econometria de Séries Temporais, Econometria Espacial, Dados em Painel, Modelos de Escolha Discreta (Logit / Probit), Machine Learning, Mineração de Texto (Text Mining) e Web Scraping.\n\n\nAcesse o Currículo Completo em PDF aqui."
-  },
-  {
-    "objectID": "about.html#formação-acadêmica",
-    "href": "about.html#formação-acadêmica",
-    "title": "Quem desenvolve a página WQuant",
-    "section": "",
-    "text": "Doutorado em Economia Aplicada (2017–2021)\nEscola Superior de Agricultura “Luiz de Queiroz” – Universidade de São Paulo (ESALQ/USP)\nTese: Climate change in agriculture and internal migration in Brazil\nMBA em Data Science & Analytics (2021–2023)\nUSP / PECEGE\nTrabalho final: Spatial analysis of the deforestation rate in the Cerrado Biome 1985–2017\nMBA em Agronegócios (2019–2021)\nUSP / PECEGE\nTrabalho final: Analysis of deforestation and agricultural growth in the municipalities of MATOPIBA 2006–2017\nMestrado em Economia e Desenvolvimento (2015–2017)\nUniversidade Federal de Santa Maria (UFSM/RS)\nDissertação: Migrations in Brazil: An Application of the Gravity Model with Panel Data (2002–2015)\nBacharelado em Ciências Econômicas (2011–2014)\nUniversidade Estadual de Ponta Grossa (UEPG/PR)"
+    "text": "Consultor de Metodologia de Riscos (ERM Forecasting) | Santander Brasil (2020–Presente)\nDesenvolvimento de modelos quantitativos de stress testing para predição de indicadores de inadimplência (Probability of Default – PD e Loss Given Default – LGD), além de modelos de credit risk rating e score.\nProfessor Orientador de MBA | PECEGE / USP (2021–Presente)\nOrientação de trabalhos de conclusão de curso (lato sensu) no MBA em Data Science & Analytics.\nProfessor Orientador e Consultor Externo | PECEGE / USP (2019–2022)\nOrientação de trabalhos de conclusão de curso nos MBAs em Agronegócios e Gestão de Negócios, além de consultoria externa e revisão de cálculos de viabilidade econômico-financeira e fluxo de caixa."
   },
   {
     "objectID": "about.html#experiência-profissional-e-docência",
     "href": "about.html#experiência-profissional-e-docência",
-    "title": "Quem desenvolve a página WQuant",
+    "title": "Sobre Mim",
     "section": "",
-    "text": "Analista Sênior de Metodologia de Riscos (ERM Forecasting) | Santander Brasil (2020–Presente)\nDesenvolvimento de modelos quantitativos de stress testing para predição de PD e LGD, além de modelos de credit risk rating e score.\nProfessor Orientador de MBA | PECEGE / USP (2019–Presente)\nOrientação de trabalhos de conclusão de curso (lato sensu) nos programas de MBA em Data Science & Analytics, Agronegócios e Gestão de Negócios, além de consultoria externa e revisão de viabilidade econômico-financeira e fluxo de caixa."
+    "text": "Consultor de Metodologia de Riscos (ERM Forecasting) | Santander Brasil (2020–Presente)\nDesenvolvimento de modelos quantitativos de stress testing para predição de indicadores de inadimplência (Probability of Default – PD e Loss Given Default – LGD), além de modelos de credit risk rating e score.\nProfessor Orientador de MBA | PECEGE / USP (2021–Presente)\nOrientação de trabalhos de conclusão de curso (lato sensu) no MBA em Data Science & Analytics.\nProfessor Orientador e Consultor Externo | PECEGE / USP (2019–2022)\nOrientação de trabalhos de conclusão de curso nos MBAs em Agronegócios e Gestão de Negócios, além de consultoria externa e revisão de cálculos de viabilidade econômico-financeira e fluxo de caixa."
+  },
+  {
+    "objectID": "about.html#formação-acadêmica",
+    "href": "about.html#formação-acadêmica",
+    "title": "Sobre Mim",
+    "section": "Formação Acadêmica",
+    "text": "Formação Acadêmica\n\nDoutorado em Economia Aplicada (2017–2021)\nEscola Superior de Agricultura “Luiz de Queiroz” – Universidade de São Paulo (ESALQ/USP)\nTese: Climate change in agriculture and internal migration in Brazil\nMBA em Data Science & Analytics (2021–2023)\nPrograma de Educação Continuada em Economia e Gestão de Empresas (PECEGE/USP)\nMonografia: Spatial analysis of the deforestation rate in the Cerrado Biome 1985–2017\nMBA em Agronegócios (2019–2021)\nPrograma de Educação Continuada em Economia e Gestão de Empresas (PECEGE/USP)\nMonografia: Analysis of deforestation and agricultural growth in the municipalities of MATOPIBA 2006–2017\nMestrado em Economia e Desenvolvimento (2015–2017)\nUniversidade Federal de Santa Maria (UFSM/RS)\nDissertação: Migrations in Brazil: An Application of the Gravity Model with Panel Data (2002–2015)\nBacharelado em Ciências Econômicas (2011–2014)\nUniversidade Estadual de Ponta Grossa (UEPG/PR)\nMonografia: Empirical Analysis of the Evidence of Deindustrialization in the State of Paraná in the Period from 1996 to 2012"
   },
   {
     "objectID": "about.html#competências-técnicas",
     "href": "about.html#competências-técnicas",
-    "title": "Quem desenvolve a página WQuant",
-    "section": "",
-    "text": "Linguagens & Ferramentas: R, Python, Julia, SQL, LaTeX, Quarto, RMarkdown, Shiny, Git, VS Code, RStudio, QGIS e Stata.\nModelagem & Métodos: Econometria de Séries Temporais, Econometria Espacial, Dados em Painel, Modelos de Escolha Discreta (Logit / Probit), Machine Learning, Mineração de Texto (Text Mining) e Web Scraping.\n\n\nAcesse o Currículo Completo em PDF aqui."
+    "title": "Sobre Mim",
+    "section": "Competências Técnicas",
+    "text": "Competências Técnicas\n\nLinguagens & Programação: R (9+ anos), LaTeX (9+ anos), SQL (5+ anos), Python (4+ anos), Julia (2+ anos).\nFerramentas & Ecossistema: QGIS (10+ anos), RMarkdown / Quarto, Shiny App, Git, VS Code, RStudio e Stata.\nModelagem & Métodos Quantitativos:\n\nEconometria de Séries Temporais, Econometria Espacial e Dados em Painel;\nModelos de Variável Dependente Limitada (Logit e Probit) e Dados de Contagem;\nModelagem de Risco de Crédito (Stress Testing, PD, LGD, Rating e Score);\nMachine Learning, Mineração de Texto (Text Mining), Web Scraping e manipulação em ambiente Big Data."
+  },
+  {
+    "objectID": "about.html#links-e-contato",
+    "href": "about.html#links-e-contato",
+    "title": "Sobre Mim",
+    "section": "Links e Contato",
+    "text": "Links e Contato\n\nCurrículo Completo (PDF): Baixar Currículo\nCurrículo Lattes: http://lattes.cnpq.br/9370334825334170\nGitHub: https://github.com/william-barbosa\nPortal WQuant: https://wquant.com.br/\nE-mail: williambarbosa@alumni.usp.br"
   },
   {
     "objectID": "Artigos/index.html",
@@ -186,7 +193,21 @@
     "href": "index.html",
     "title": "William Barbosa",
     "section": "",
-    "text": "WQuant\n  \n  \n    \n     GitHub\n  \n  \n    \n     Lattes\n  \n  \n    \n     Currículo\n  \n  \n    \n     E-mail\n  \n\n  \n  \nOlá, meu nome é William Barbosa.\nSou Doutor em Economia Aplicada pela ESALQ/USP e atuo como Analista de Riscos em um grande banco global, onde desenvolvo modelos de stress testing para previsão de indicadores de inadimplência (PD e LGD), credit risk rating e score.\nO WQuant nasce da intersecção entre a rigorosidade acadêmica e a prática do mercado financeiro. Meu objetivo aqui é utilizar Ciência de Dados para contar histórias sobre a bolsa brasileira e o cenário macroeconômico, desmistificando a economia com números, não com “achismos”.\n\nMinha formação e experiência\n\nAcadêmico: Doutor (ESALQ/USP) e Mestre (UFSM) em Economia, com especializações (MBA) em Data Science & Analytics (USP) e Agronegócios (USP), além de Bacharel em Ciências Econômicas pela UEPG.\nTécnico: Especialista em programação (R, Python, Julia e SQL) aplicada a séries temporais, econometria espacial, dados em painel e Machine Learning.\nDocência: Professor orientador em MBAs de Data Science & Analytics e Agronegócio no PECEGE/USP.\n\nNeste espaço, compartilho estudos sobre finanças quantitativas, tutoriais de programação e análises de cenários econômicos, sempre com código aberto e reprodutível.\nAcesse o Currículo Completo aqui ou saiba mais na página Sobre."
+    "text": "WQuant\n  \n  \n    \n     GitHub\n  \n  \n    \n     Lattes\n  \n  \n    \n     Currículo\n  \n  \n    \n     E-mail\n  \n\n  \n  \nOlá, meu nome é William Barbosa.\nSou Doutor em Economia Aplicada pela ESALQ/USP e atuo como Consultor de Riscos em um grande banco global, onde desenvolvo modelos quantitativos de stress testing para previsão de indicadores de inadimplência (PD e LGD), credit risk rating e score. Também atuo como professor orientador nos MBAs de Data Science & Analytics e Agronegócios no PECEGE/USP.\nNeste espaço, compartilho estudos sobre finanças quantitativas, econometria, tutoriais de programação (R, Python, Julia e SQL) e análises de cenários econômicos, sempre com código aberto e reprodutível.\nConfira minha formação detalhada e trajetória na página Sobre ou acesse o Currículo Completo (PDF)."
+  },
+  {
+    "objectID": "index.html#últimas-postagens",
+    "href": "index.html#últimas-postagens",
+    "title": "William Barbosa",
+    "section": "Últimas Postagens",
+    "text": "Últimas Postagens\n\n\n\n\n\n\n\n\n\n\nIntrodução ao R: Funções, Objetos e Classes\n\n\n\n\n\n\nTutoriais\n\n\nR\n\n\nFunções\n\n\n\nConceitos fundamentais da linguagem R: funções, objetos, classes e tipos de dados.\n\n\n\n\n\n27 de jan. de 2026\n\n\n\n\n\n\n\n\n\n\n\n\nComo instalar o software R e o VS Code: Guia Completo de Instalação e Configuração\n\n\n\n\n\n\nTutoriais\n\n\nR\n\n\nVS Code\n\n\n\nGuia prático para instalação e configuração do ambiente de desenvolvimento R utilizando o Visual Studio Code.\n\n\n\n\n\n27 de jan. de 2026\n\n\n\n\n\n\nSem itens correspondentes\n\n\nVer todas as postagens →"
+  },
+  {
+    "objectID": "index.html#projetos-em-destaque",
+    "href": "index.html#projetos-em-destaque",
+    "title": "William Barbosa",
+    "section": "Projetos em Destaque",
+    "text": "Projetos em Destaque\n\n\n\n\n\n\n\n\n\n\nAnálise Espacial do Impacto da Agropecuária na Taxa de Desflorestamento dos Biomas Brasileiros\n\n\n\nAnálise Espacial\n\n\nDesflorestamento\n\n\nAgropecuária\n\n\n\nAnálise econométrica espacial do impacto da expansão agropecuária na taxa de desflorestamento em nível de biomas brasileiros.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDesindustrialização Brasileira\n\n\n\nIndústria\n\n\nAnálise Espacial\n\n\nRegional\n\n\n\nAnálise da evidência da desindustrialização em nível regional no Brasil a partir de técnicas de econometria espacial.\n\n\n\n\n\n\n\nSem itens correspondentes\n\n\nVer todos os projetos e publicações →"
   },
   {
     "objectID": "projects/project_1/index.html",

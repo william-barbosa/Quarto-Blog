@@ -12,5 +12,14 @@
       "/blog/Classes e Objetos/index.html",
       "/blog/Introdução ao R/index.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/blog/Classes e Objetos/index.html",
+      "/blog/Introdução ao R/index.html",
+      "/projects/project_1/index.html",
+      "/projects/project_2/index.html"
+    ]
   }
 ]

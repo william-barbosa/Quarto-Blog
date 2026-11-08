@@ -1,12 +1,12 @@
 ---
 title: "William Barbosa"
-subtitle: "Doutor em Economia Aplicada (ESALQ/USP) | Analista Sênior de Riscos | Cientista de Dados"
+subtitle: "Doutor em Economia Aplicada (ESALQ/USP) | Consultor de Riscos | Cientista de Dados"
 image: perfil2.jpg
 about:
   id: hero-heading
   template: trestles
   image-shape: rounded
-  image-width: 16em
+  image-width: 15em
   links:
     - icon: globe
       text: WQuant
@@ -23,6 +23,26 @@ about:
     - icon: envelope
       text: E-mail
       href: mailto:williambarbosa@alumni.usp.br
+listing:
+  - id: recent-posts
+    contents: blog
+    sort: "date desc"
+    type: default
+    max-items: 3
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    fields: [date, title, description, categories, image]
+  - id: featured-projects
+    contents:
+      - projects/project_1
+      - projects/project_2
+    type: grid
+    grid-columns: 2
+    image-height: 150px
+    fields: [title, description, categories, image]
+    sort-ui: false
+    filter-ui: false
 title-block-banner: false
 toc: false
 ---
@@ -31,18 +51,28 @@ toc: false
 
 Olá, meu nome é **William Barbosa**.
 
-Sou Doutor em Economia Aplicada pela **ESALQ/USP** e atuo como Analista de Riscos em um grande banco global, onde desenvolvo modelos de *stress testing* para previsão de indicadores de inadimplência (*PD* e *LGD*), *credit risk rating* e *score*.
+Sou Doutor em Economia Aplicada pela **ESALQ/USP** e atuo como **Consultor de Riscos** em um grande banco global, onde desenvolvo modelos quantitativos de *stress testing* para previsão de indicadores de inadimplência (*PD* e *LGD*), *credit risk rating* e *score*. Também atuo como professor orientador nos MBAs de *Data Science & Analytics* e Agronegócios no **PECEGE/USP**.
 
-O **[WQuant](https://wquant.com.br/)** nasce da intersecção entre a rigorosidade acadêmica e a prática do mercado financeiro. Meu objetivo aqui é utilizar Ciência de Dados para contar histórias sobre a bolsa brasileira e o cenário macroeconômico, desmistificando a economia com números, não com "achismos".
+Neste espaço, compartilho estudos sobre finanças quantitativas, econometria, tutoriais de programação (`R`, `Python`, `Julia` e `SQL`) e análises de cenários econômicos, sempre com código aberto e reprodutível.
 
-### Minha formação e experiência
-
-- **Acadêmico:** Doutor (ESALQ/USP) e Mestre (UFSM) em Economia, com especializações (MBA) em *Data Science & Analytics* (USP) e Agronegócios (USP), além de Bacharel em Ciências Econômicas pela UEPG.
-- **Técnico:** Especialista em programação (`R`, `Python`, `Julia` e `SQL`) aplicada a séries temporais, econometria espacial, dados em painel e *Machine Learning*.
-- **Docência:** Professor orientador em MBAs de *Data Science & Analytics* e Agronegócio no PECEGE/USP.
-
-Neste espaço, compartilho estudos sobre finanças quantitativas, tutoriais de programação e análises de cenários econômicos, sempre com código aberto e reprodutível.
-
-Acesse o Currículo Completo [aqui](Curriculo/William_Barbosa.pdf) ou saiba mais na página [Sobre](about.qmd).
+Confira minha formação detalhada e trajetória na página [Sobre](about.qmd) ou acesse o [Currículo Completo (PDF)](Curriculo/William_Barbosa.pdf).
 
 :::
+
+---
+
+## Últimas Postagens
+
+::: {#recent-posts}
+:::
+
+[Ver todas as postagens →](blog.qmd){.btn .btn-outline-primary .btn-sm}
+
+---
+
+## Projetos em Destaque
+
+::: {#featured-projects}
+:::
+
+[Ver todos os projetos e publicações →](projects/index.qmd){.btn .btn-outline-primary .btn-sm}

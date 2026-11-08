@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>WQuant | William Barbosa – William Barbosa</title>
+<title>William Barbosa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,8 +67,94 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-featured-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-featured-projects'] = new List('listing-featured-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -79,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">WQuant | William Barbosa</span>
+    <span class="navbar-title">William Barbosa</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Procurar"></div>
@@ -169,11 +257,11 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-about-trestles">
   <div class="about-entity">
     <img src="perfil2.jpg" class="about-image
-  rounded " style="width: 16em;">
+  rounded " style="width: 15em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">William Barbosa</h1>
-<p class="subtitle lead">Doutor em Economia Aplicada (ESALQ/USP) | Analista Sênior de Riscos | Cientista de Dados</p>
+<p class="subtitle lead">Doutor em Economia Aplicada (ESALQ/USP) | Consultor de Riscos | Cientista de Dados</p>
 </div>
 <div class="quarto-title-meta">
   </div>
@@ -203,24 +291,168 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="about-contents"><div id="hero-heading">
 <p>Olá, meu nome é <strong>William Barbosa</strong>.</p>
-<p>Sou Doutor em Economia Aplicada pela <strong>ESALQ/USP</strong> e atuo como Analista de Riscos em um grande banco global, onde desenvolvo modelos de <em>stress testing</em> para previsão de indicadores de inadimplência (<em>PD</em> e <em>LGD</em>), <em>credit risk rating</em> e <em>score</em>.</p>
-<p>O <strong><a href="https://wquant.com.br/">WQuant</a></strong> nasce da intersecção entre a rigorosidade acadêmica e a prática do mercado financeiro. Meu objetivo aqui é utilizar Ciência de Dados para contar histórias sobre a bolsa brasileira e o cenário macroeconômico, desmistificando a economia com números, não com “achismos”.</p>
-<section id="minha-formação-e-experiência" class="level3">
-<h3 data-anchor-id="minha-formação-e-experiência">Minha formação e experiência</h3>
-<ul>
-<li><strong>Acadêmico:</strong> Doutor (ESALQ/USP) e Mestre (UFSM) em Economia, com especializações (MBA) em <em>Data Science &amp; Analytics</em> (USP) e Agronegócios (USP), além de Bacharel em Ciências Econômicas pela UEPG.</li>
-<li><strong>Técnico:</strong> Especialista em programação (<code>R</code>, <code>Python</code>, <code>Julia</code> e <code>SQL</code>) aplicada a séries temporais, econometria espacial, dados em painel e <em>Machine Learning</em>.</li>
-<li><strong>Docência:</strong> Professor orientador em MBAs de <em>Data Science &amp; Analytics</em> e Agronegócio no PECEGE/USP.</li>
-</ul>
-<p>Neste espaço, compartilho estudos sobre finanças quantitativas, tutoriais de programação e análises de cenários econômicos, sempre com código aberto e reprodutível.</p>
-<p>Acesse o Currículo Completo <a href="Curriculo/William_Barbosa.pdf">aqui</a> ou saiba mais na página <a href="./about.html">Sobre</a>.</p>
-</section>
+<p>Sou Doutor em Economia Aplicada pela <strong>ESALQ/USP</strong> e atuo como <strong>Consultor de Riscos</strong> em um grande banco global, onde desenvolvo modelos quantitativos de <em>stress testing</em> para previsão de indicadores de inadimplência (<em>PD</em> e <em>LGD</em>), <em>credit risk rating</em> e <em>score</em>. Também atuo como professor orientador nos MBAs de <em>Data Science &amp; Analytics</em> e Agronegócios no <strong>PECEGE/USP</strong>.</p>
+<p>Neste espaço, compartilho estudos sobre finanças quantitativas, econometria, tutoriais de programação (<code>R</code>, <code>Python</code>, <code>Julia</code> e <code>SQL</code>) e análises de cenários econômicos, sempre com código aberto e reprodutível.</p>
+<p>Confira minha formação detalhada e trajetória na página <a href="./about.html">Sobre</a> ou acesse o <a href="Curriculo/William_Barbosa.pdf">Currículo Completo (PDF)</a>.</p>
 </div></div>
 </div>
 
+<hr>
+<section id="últimas-postagens" class="level2">
+<h2 data-anchor-id="últimas-postagens">Últimas Postagens</h2>
+<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Tutoriais,R,Funções" data-listing-date-sort="1769482800000" data-listing-file-modified-sort="1794160908686" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1207">
+<div class="thumbnail">
+<p><a href="./blog/Classes e Objetos/index.html" class="no-external"></a></p><a href="./blog/Classes e Objetos/index.html" class="no-external">
+<p><img loading="lazy" src="./blog/Classes e Objetos/Rlogo.svg" class="thumbnail-image"></p>
+</a><p><a href="./blog/Classes e Objetos/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog/Classes e Objetos/index.html" class="no-external">Introdução ao R: Funções, Objetos e Classes</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./blog/Classes e Objetos/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Tutoriais'); return false;">
+Tutoriais
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Funções'); return false;">
+Funções
+</div>
+</div>
+<div class="listing-description">
+<a href="./blog/Classes e Objetos/index.html" class="no-external">Conceitos fundamentais da linguagem R: funções, objetos, classes e tipos de dados.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./blog/Classes e Objetos/index.html" class="no-external">
+<div class="listing-date">
+27 de jan. de 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Tutoriais,R,VS Code" data-listing-date-sort="1769482800000" data-listing-file-modified-sort="1794160908731" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="448">
+<div class="thumbnail">
+<p><a href="./blog/Introdução ao R/index.html" class="no-external"></a></p><a href="./blog/Introdução ao R/index.html" class="no-external">
+<p><img loading="lazy" src="./blog/Introdução ao R/Rlogo.svg" class="thumbnail-image"></p>
+</a><p><a href="./blog/Introdução ao R/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog/Introdução ao R/index.html" class="no-external">Como instalar o software R e o VS Code: Guia Completo de Instalação e Configuração</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./blog/Introdução ao R/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Tutoriais'); return false;">
+Tutoriais
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VS Code'); return false;">
+VS Code
+</div>
+</div>
+<div class="listing-description">
+<a href="./blog/Introdução ao R/index.html" class="no-external">Guia prático para instalação e configuração do ambiente de desenvolvimento R utilizando o Visual Studio Code.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./blog/Introdução ao R/index.html" class="no-external">
+<div class="listing-date">
+27 de jan. de 2026
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+Sem itens correspondentes
+</div>
+</div>
+<p><a href="./blog.html" class="btn btn-outline-primary btn-sm">Ver todas as postagens →</a></p>
+<hr>
+</section>
+<section id="projetos-em-destaque" class="level2">
+<h2 data-anchor-id="projetos-em-destaque">Projetos em Destaque</h2>
+<div id="listing-featured-projects" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-categories="Análise Espacial,Desflorestamento,Agropecuária" data-listing-file-modified-sort="1794160909014" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+<a href="./projects/project_1/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/project_1/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Análise Espacial do Impacto da Agropecuária na Taxa de Desflorestamento dos Biomas Brasileiros
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Análise Espacial'); return false;">
+Análise Espacial
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Desflorestamento'); return false;">
+Desflorestamento
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Agropecuária'); return false;">
+Agropecuária
+</div>
+</div>
+<div class="card-text listing-description">
+Análise econométrica espacial do impacto da expansão agropecuária na taxa de desflorestamento em nível de biomas brasileiros.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Indústria,Análise Espacial,Regional" data-listing-file-modified-sort="1794160909053" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
+<a href="./projects/project_2/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/project_2/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Desindustrialização Brasileira
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Indústria'); return false;">
+Indústria
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Análise Espacial'); return false;">
+Análise Espacial
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Regional'); return false;">
+Regional
+</div>
+</div>
+<div class="card-text listing-description">
+Análise da evidência da desindustrialização em nível regional no Brasil a partir de técnicas de econometria espacial.
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+Sem itens correspondentes
+</div>
+</div>
+<p><a href="./projects/index.html" class="btn btn-outline-primary btn-sm">Ver todos os projetos e publicações →</a></p>
 
 
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
