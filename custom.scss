@@ -165,135 +165,103 @@ main.content > header#title-block-header {
   border-bottom: 1px solid $gray-300;
 }
 
-/* Componente About (Trestles) — Alinhado e Responsivo */
-div.quarto-about-trestles {
+/* Card Lateral de Perfil (Página Sobre / Home) */
+.profile-sidebar {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
-  gap: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding-right: 1.5rem;
+  border-right: 1px solid $gray-300;
 
-  .about-entity {
-    flex: 0 0 280px;
-    max-width: 280px;
-    position: sticky;
-    top: 5.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.75rem;
-    padding-right: 0;
+  .about-image {
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+    border: 3px solid $gray-200;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
 
-    .about-image {
-      object-fit: cover;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
-      border: 3px solid $gray-200;
-    }
-
-    header#title-block-header {
+  .profile-card-header {
+    .profile-name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: $navy-dark;
+      margin-top: 0;
+      margin-bottom: 0.35rem;
       border-bottom: none;
-      margin-bottom: 0.25rem;
       padding-bottom: 0;
-
-      .title {
-        font-size: 1.65rem;
-        margin-bottom: 0.35rem;
-      }
-
-      .subtitle {
-        font-size: 0.92rem;
-        color: $gray-600;
-        line-height: 1.45;
-      }
     }
 
-    .about-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 0.25rem;
-
-      .about-link {
-        padding: 0.4rem 0.75rem;
-        border-radius: 0.375rem;
-        font-size: 0.85rem;
-        font-weight: 500;
-        color: $navy-dark;
-        border: 1px solid $gray-300;
-        background-color: $gray-100;
-        transition: all 0.2s ease;
-        text-decoration: none;
-
-        &:hover {
-          background-color: $primary;
-          border-color: $primary;
-          color: $white;
-        }
-      }
+    .profile-role {
+      font-size: 0.9rem;
+      color: $gray-600;
+      line-height: 1.45;
+      margin-bottom: 0;
     }
   }
 
-  .about-contents {
-    flex: 1 1 0%;
-    min-width: 0;
-    border-left: 1px solid $gray-300;
-    padding-left: 2.25rem;
+  .about-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
 
-    .about-header {
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid $gray-300;
-
-      h1 {
-        margin-top: 0;
-        margin-bottom: 0.35rem;
-        font-size: 2rem;
-        color: $navy-dark;
-      }
-
-      p {
-        margin-bottom: 0;
-        font-size: 1.1rem;
-        color: $gray-600;
-      }
-    }
-
-    h2:first-child,
-    #hero-heading > section:first-child > h2 {
-      margin-top: 0;
-    }
-
-    h2, h3 {
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-      font-size: 1.4rem;
+    .about-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 0.375rem;
+      font-size: 0.85rem;
+      font-weight: 500;
       color: $navy-dark;
+      border: 1px solid $gray-300;
+      background-color: $gray-100;
+      transition: all 0.2s ease;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #quarto-content:has(.profile-sidebar) > main.content {
+    grid-column: screen-start-inset / body-end !important;
+    display: grid !important;
+    grid-template-columns: 290px minmax(0, 1fr) !important;
+    column-gap: 2.5rem !important;
+    align-items: start;
+
+    > .profile-sidebar {
+      grid-column: 1 !important;
+      grid-row: 1 / span 30;
+      position: sticky;
+      top: 5.5rem;
+    }
+
+    > :not(.profile-sidebar) {
+      grid-column: 2 !important;
+      min-width: 0;
     }
   }
 }
 
 @media (max-width: 991.98px) {
-  div.quarto-about-trestles {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.75rem;
-
-    .about-entity {
-      flex: 1 1 auto;
-      max-width: 100%;
-      position: static;
-    }
-
-    .about-contents {
-      width: 100%;
-      border-left: none;
-      border-top: 1px solid $gray-300;
-      padding-left: 0;
-      padding-top: 1.5rem;
-    }
+  .profile-sidebar {
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-right: none;
+    border-bottom: 1px solid $gray-300;
   }
 }
 
