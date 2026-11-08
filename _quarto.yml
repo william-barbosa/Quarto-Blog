@@ -2,74 +2,57 @@ project:
   type: website
   output-dir: docs
 
+lang: pt-BR
+
 website:
+  title: "WQuant | William Barbosa"
+  description: "Economia Aplicada, Finanças Quantitativas e Ciência de Dados por William Barbosa"
+  site-url: "https://wquant.com.br/"
   page-navigation: true
-  title: "William Barbosa"
-
-
-  page-footer:
-    left: "&copy; Copyright 2023, William Barbosa"
-    right: "Essa página foi construída com [Quarto](https://quarto.org/)."
 
   navbar:
-      right: #left:
-      # - text: "Início"
-      #   file: index.qmd
+    background: dark
+    search: true
+    left:
+      - text: "Início"
+        href: index.qmd
       - text: "Posts"
         href: blog.qmd
-
-      - text: "Projetos"
+      - text: "Projetos & Publicações"
         href: projects/index.qmd
-
-
-      - text: "Resumo"
+      - text: "Sobre"
+        href: about.qmd
+      - text: "Currículo"
         href: Curriculo/William_Barbosa.pdf
-
       - text: "Indicações"
         menu:
-        - text: "Use R!"
-          href: 'https://cran.r-project.org/'
-        - text: "Anaconda"
-          href: 'https://docs.anaconda.com/free/anaconda/install/index.html'
-        - text: "Julia"
-          href: 'https://julialang.org/downloads/'
-        - text: 'QGIS'
-          href: 'https://www.qgis.org/pt_BR/site/forusers/download.html'
+          - text: "Use R!"
+            href: "https://cran.r-project.org/"
+          - text: "Anaconda (Python)"
+            href: "https://docs.anaconda.com/free/anaconda/install/index.html"
+          - text: "Julia"
+            href: "https://julialang.org/downloads/"
+          - text: "QGIS"
+            href: "https://www.qgis.org/pt_BR/site/forusers/download.html"
+    right:
+      - icon: globe
+        href: "https://wquant.com.br/"
+        aria-label: "Portal WQuant"
+      - icon: github
+        href: "https://github.com/william-barbosa"
+        aria-label: "GitHub"
+      - icon: envelope
+        href: "mailto:williambarbosa@alumni.usp.br"
+        aria-label: "E-mail"
 
-
-  sidebar:
-    pinned: true
-    align: center
-    style: "floating"
-    # background: primary
-    collapse-level: 2
-    contents:
-      # - text: "Projetos"
-      #   href: projects/index.qmd
-      # - text: "Pensar em algo com o que a comunidade stá falando"
-      #   href: talks/index.qmd
-      - section: "About"
-        contents:
-          - text: "About me"
-            href: about.qmd
-      - section: "Publicações"
-        contents:
-        - text: "Revistas"
+  page-footer:
+    left: "&copy; 2026 William Barbosa &middot; [WQuant](https://wquant.com.br/)"
+    right: "Desenvolvido com [Quarto](https://quarto.org/)."
 
 format:
   html:
-    theme: custom.scss #william-tema.scss
+    theme: custom.scss
     css: styles.css
     toc: true
-    # grid:
-      #  sidebar-width: 200px
-    #   body-width: 900px
-    #   margin-width: 400px
-      # gutter-width: 20px
-
-# template-partials:
-  # - noto.html
-  # - title-block.html
-
-# include-in-header: title-block.html
-
+    smooth-scroll: true
+    link-external-newwindow: true

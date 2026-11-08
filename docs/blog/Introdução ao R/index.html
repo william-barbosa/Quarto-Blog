@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.2">
+<meta name="generator" content="quarto-1.5.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="William Barbosa">
-<meta name="description" content="Instalando e configurando o R e Visual Studio Code">
+<meta name="description" content="Guia prático para instalação e configuração do ambiente de desenvolvimento R utilizando o Visual Studio Code.">
 
-<title>VS Code e R – William Barbosa</title>
+<title>WQuant | William Barbosa – Como instalar o software R e o VS Code: Guia Completo de Instalação e Configuração</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,6 +26,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -36,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-07c16812f08c4a1591d6ec4fc46327fa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a56cd01f8cdcf43109c34ee5120dcd68.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -80,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">William Barbosa</span>
+    <span class="navbar-title">WQuant | William Barbosa</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Procurar"></div>
@@ -88,31 +90,39 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../projects/index.html"> 
-<span class="menu-text">Projetos</span></a>
+<span class="menu-text">Projetos &amp; Publicações</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">Sobre</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../Curriculo/William_Barbosa.pdf"> 
-<span class="menu-text">Resumo</span></a>
+<span class="menu-text">Currículo</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-indicações" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Indicações</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-indicações">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-indicações">    
         <li>
     <a class="dropdown-item" href="https://cran.r-project.org/">
  <span class="dropdown-text">Use R!</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://docs.anaconda.com/free/anaconda/install/index.html">
- <span class="dropdown-text">Anaconda</span></a>
+ <span class="dropdown-text">Anaconda (Python)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://julialang.org/downloads/">
@@ -125,6 +135,23 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://wquant.com.br/"> <i class="bi bi-globe" role="img" aria-label="Portal WQuant">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/william-barbosa"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:williambarbosa@alumni.usp.br"> <i class="bi bi-envelope" role="img" aria-label="E-mail">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -135,13 +162,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">VS Code e R</h1>
+      <h1 class="title">Como instalar o software R e o VS Code: Guia Completo de Instalação e Configuração</h1>
                   <div>
         <div class="description">
-          <p>Instalando e configurando o R e Visual Studio Code</p>
+          Guia prático para instalação e configuração do ambiente de desenvolvimento R utilizando o Visual Studio Code.
         </div>
       </div>
                           <div class="quarto-categories">
+                <div class="quarto-category">Tutoriais</div>
                 <div class="quarto-category">R</div>
                 <div class="quarto-category">VS Code</div>
               </div>
@@ -161,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Data de Publicação</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">15 de novembro de 2023</p>
+        <p class="date">27 de janeiro de 2026</p>
       </div>
     </div>
     
@@ -191,53 +219,65 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="objetivo" class="level1">
-<h1>Objetivo</h1>
-<p>Este post tem por objetivo o auxílio para instalação e configuração do R.</p>
+<section id="objetivo" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
+<p>O objetivo deste post é auxiliar na instalação e configuração do ambiente de desenvolvimento R utilizando o VS Code.</p>
 </section>
-<section id="primeiros-passos" class="level1">
-<h1>Primeiros passos</h1>
-<p>É notável que atualmente existem inúmeros benefícios para a utilização da IDE <a href="https://posit.co/download/rstudio-desktop/">Rstudio</a>, porém, existem muitos outros problemas e gargalos na sua utilização comprometem a produtividade do trabalho no dia a dia. Em 2023 o Stack Overflow lançou uma <a href="https://survey.stackoverflow.co/2023/#worked-with-vs-want-to-work-with-new-collab-tools-worked-want">pesquisa</a> e constatou que 73.71% programadores tinham o VS Code como IDE preferido e apenas 2.71% o RStudio. Portanto, esse fato revela não apenas a popularidade, mas revela que existem uma série de benefícios e facilidades na utilização dessa IDE.</p>
-<p>Para que seja possível a programação em R no VS Code é necessário adotar alguns passos inicias:</p>
+<section id="primeiros-passos" class="level2">
+<h2 class="anchored" data-anchor-id="primeiros-passos">Primeiros passos</h2>
+<p>É notável que atualmente existem inúmeros benefícios para a utilização da IDE <a href="https://posit.co/download/rstudio-desktop/">RStudio</a>, porém, existem gargalos na sua utilização que podem comprometer a produtividade no dia a dia. Em 2023, o Stack Overflow lançou uma <a href="https://survey.stackoverflow.co/2023/#worked-with-vs-want-to-work-with-new-collab-tools-worked-want">pesquisa</a> e constatou que 73,71% dos programadores tinham o VS Code como IDE preferido e apenas 2,71% o RStudio. Portanto, esse fato revela não apenas a popularidade, mas também uma série de benefícios e facilidades na utilização dessa IDE.</p>
+<p>Para programar em R no VS Code, siga estes passos iniciais:</p>
 <ol type="1">
-<li>Baixar o R interpretador via <a href="https://cran.r-project.org/">CRAN</a>;</li>
-<li>Realizar a instalação e localizar o referido camimho. É indicado que seja sempre instalado em uma pasta que não necessite de permissão para modificação ou instalação de pacotes; No caso, a instalação pode ser realizada em <code>C:\Users\seu_usuario\Documents\R-4.3.2</code>;</li>
-<li>Abrir o R via terminal (<code>C:\Users\seu_usuario\Documents\R-4.3.2\bin\x64\R.exe</code>) e instalar os seguintes pacotes:</li>
-</ol>
+<li><p>Baixar o interpretador R via <a href="https://cran.r-project.org/">CRAN</a>;</p></li>
+<li><p>Realizar a instalação e localizar o referido caminho. É indicado que seja sempre instalado em uma pasta que não necessite de permissão de administrador para modificação ou instalação de pacotes (por exemplo, <code>C:\Users\seu_usuario\Documents\R-4.3.2</code>);</p></li>
+<li><p>Abrir o R via terminal (<code>C:\Users\seu_usuario\Documents\R-4.3.2\bin\x64\R.exe</code>) e instalar o pacote de suporte à linguagem:</p>
 <ul>
-<li><code>install.packages("languageserver")</code>. Nessa etapa será solicitado para selecionar o espelho do CRAN para baixar os pacotes (é indicado que o usuário selecione a opção mais próxima de sua região.);</li>
-</ul>
-<ol start="4" type="1">
-<li>Instalar o <a href="https://code.visualstudio.com/">VS Code</a>;</li>
-<li>Abrir o VS Code e instalar a extensão própria para o <a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r">R</a> com os seguintes passos:</li>
-</ol>
+<li>Execute <code>install.packages("languageserver")</code>. Nessa etapa será solicitado selecionar o espelho do CRAN para baixar os pacotes (recomenda-se escolher a opção mais próxima de sua região);</li>
+</ul></li>
+<li><p>Instalar o <a href="https://code.visualstudio.com/">VS Code</a>;</p></li>
+<li><p>Abrir o VS Code e instalar a extensão oficial para o <a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r">R</a>:</p>
 <ul>
-<li>Usar o atalho <strong>Ctrl + Shift + X</strong>:<br>
-<img src="ExtensaoR.jpg" class="img-fluid"></li>
+<li>Use o atalho <strong>Ctrl + Shift + X</strong> e pesquise pela extensão <strong>R</strong>:</li>
 </ul>
-<ol start="6" type="1">
-<li>Posteriormente, deve-se configurar os caminhos editando as configurações. Por ser mais rápido, indica-se o seguinte procedimento:</li>
-</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ExtensaoR.jpg" class="img-fluid figure-img"></p>
+<figcaption>Instalação da extensão R no VS Code</figcaption>
+</figure>
+</div></li>
+<li><p>Posteriormente, configure os caminhos editando o arquivo de configurações (<code>settings.json</code>):</p>
 <ul>
-<li>Usar o atalho <code>Ctrl + Shift + P</code> e digitar “Preferências” na barra de pesquisa que será aberta, editar o arquivo conforme a segunda imagem, salvar e fechar:<br>
-<img src="abre_settings.png" class="img-fluid"><br>
-<br>
-<img src="configuracoes.png" class="img-fluid"></li>
+<li>Use o atalho <strong>Ctrl + Shift + P</strong>, digite <code>"Preferences: Open User Settings (JSON)"</code> na barra de pesquisa, edite o arquivo conforme as imagens abaixo, salve e feche:</li>
 </ul>
-<ol start="7" type="1">
-<li>Pronto, se tudo estiver configurado conforme acima, o <code>R</code> já estará pronto para ser aberto no terminal. Para isso, basta clicar em ‘Arquivo’ como na primeira opção abaixo e na segunda opção:<br>
-<img src="Novo_R.png" class="img-fluid"></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="abre_settings.png" class="img-fluid figure-img"></p>
+<figcaption>Abrindo as configurações do VS Code</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="configuracoes.png" class="img-fluid figure-img"></p>
+<figcaption>Configurando o caminho do executável R no settings.json</figcaption>
+</figure>
+</div></li>
+<li><p>Pronto! Se tudo estiver configurado conforme os passos acima, o <code>R</code> já estará pronto para ser aberto no terminal. Para isso, basta clicar em <strong>Arquivo</strong> (ou abrir a paleta de comandos) e iniciar um novo terminal R:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Novo_R.png" class="img-fluid figure-img"></p>
+<figcaption>Iniciando um novo terminal R no VS Code</figcaption>
+</figure>
+</div></li>
 </ol>
-<p>A partir de agora é só executar algum código (experimente: <code>print('Olá, mundo!')</code>) e o console do R abrirá automaticamente. Praticamente, tudo que um usuário de realiza com o RStudio é possível ser realizado com o VSCode. Existem outras maneiras a serem exploradas na utilização do R e VSCode, como por exemplo, utilizar o <a href="https://github.com/randy3k/radian">Radian</a> como terminal para executar os códigos em R, sendo que a abordagem apresentada neste tutorial foi a maneira mais simples e rápida para a configuração correta.</p>
+<p>A partir de agora é só executar algum código (experimente <code>print("Olá, mundo!")</code>) e o console do R abrirá automaticamente. Praticamente tudo o que um usuário de R realiza com o RStudio pode ser realizado com o VS Code. Existem outras maneiras a serem exploradas na integração entre R e VS Code, como utilizar o <a href="https://github.com/randy3k/radian">radian</a> como terminal interativo para executar os códigos em R, sendo a abordagem apresentada neste tutorial a maneira mais simples e direta para a configuração inicial.</p>
 </section>
-<section id="configurações-adicionais" class="level1">
-<h1>Configurações adicionais</h1>
-<p>Instalar os pacotes larguageserver e httpgd.</p>
+<section id="configurações-adicionais" class="level2">
+<h2 class="anchored" data-anchor-id="configurações-adicionais">Configurações adicionais</h2>
+<p>Recomenda-se instalar também os pacotes <code>languageserver</code> e <code>httpgd</code> para melhor visualização interativa de gráficos dentro do VS Code.</p>
 </section>
-<section id="conclusão" class="level1">
-<h1>Conclusão</h1>
+<section id="conclusão" class="level2">
+<h2 class="anchored" data-anchor-id="conclusão">Conclusão</h2>
 <p>Este post buscou introduzir e exemplificar o procedimento para a instalação e configuração básica do R no VS Code.</p>
-<!-- ![](R_cran.jpg) -->
 
 
 </section>
@@ -325,6 +365,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -333,7 +375,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/wquant\.com\.br\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -347,6 +389,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -435,6 +482,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -664,13 +712,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2023, William Barbosa</p>
+<p>© 2026 William Barbosa · <a href="https://wquant.com.br/">WQuant</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Essa página foi construída com <a href="https://quarto.org/">Quarto</a>.</p>
+<p>Desenvolvido com <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
   </div>
 </footer>
@@ -678,4 +726,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

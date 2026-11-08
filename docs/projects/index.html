@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.2">
+<meta name="generator" content="quarto-1.5.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="O objetivo é a apresentação de como as técnicas de machine learning podem ser empregadas para a elaboração de trabalhos acadêmicos e análises. Os projetos listados serão executados com bases de dados públicos, temas variados e sem fins lucrativos, dedicando-se na demonstração para a comunidade interessada na elaboração e divulgação científica.">
+<meta name="description" content="Apresentação de como técnicas de econometria, análise espacial e Machine Learning podem ser empregadas na elaboração de pesquisas acadêmicas e análises econômicas reprodutíveis.">
 
-<title>Projetos – William Barbosa</title>
+<title>WQuant | William Barbosa – Projetos &amp; Produção Acadêmica</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -37,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07c16812f08c4a1591d6ec4fc46327fa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-7458fc5b4f6bf51c0558cb23382d9149.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -55,17 +56,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 <script>
@@ -97,6 +98,7 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -131,7 +133,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -139,39 +141,47 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">William Barbosa</span>
+    <span class="navbar-title">WQuant | William Barbosa</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
-<span class="menu-text">Projetos</span></a>
+<span class="menu-text">Projetos &amp; Publicações</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">Sobre</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../Curriculo/William_Barbosa.pdf"> 
-<span class="menu-text">Resumo</span></a>
+<span class="menu-text">Currículo</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-indicações" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Indicações</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-indicações">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-indicações">    
         <li>
     <a class="dropdown-item" href="https://cran.r-project.org/">
  <span class="dropdown-text">Use R!</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://docs.anaconda.com/free/anaconda/install/index.html">
- <span class="dropdown-text">Anaconda</span></a>
+ <span class="dropdown-text">Anaconda (Python)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="https://julialang.org/downloads/">
@@ -184,6 +194,23 @@ window.Quarto = {
     </ul>
   </li>
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://wquant.com.br/"> <i class="bi bi-globe" role="img" aria-label="Portal WQuant">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/william-barbosa"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:williambarbosa@alumni.usp.br"> <i class="bi bi-envelope" role="img" aria-label="E-mail">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -194,18 +221,27 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#projetos-em-destaque" id="toc-projetos-em-destaque" class="nav-link active" data-scroll-target="#projetos-em-destaque">Projetos em Destaque</a></li>
+  <li><a href="#artigos-completos-publicados-em-periódicos" id="toc-artigos-completos-publicados-em-periódicos" class="nav-link" data-scroll-target="#artigos-completos-publicados-em-periódicos">Artigos completos publicados em periódicos</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projetos</h1>
+<h1 class="title">Projetos &amp; Produção Acadêmica</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>O objetivo é a apresentação de como as técnicas de machine learning podem ser empregadas para a elaboração de trabalhos acadêmicos e análises. Os projetos listados serão executados com bases de dados públicos, temas variados e sem fins lucrativos, dedicando-se na demonstração para a comunidade interessada na elaboração e divulgação científica.</p>
+    <p>Apresentação de como técnicas de econometria, análise espacial e <em>Machine Learning</em> podem ser empregadas na elaboração de pesquisas acadêmicas e análises econômicas reprodutíveis.</p>
   </div>
 </div>
 
@@ -222,9 +258,11 @@ window.Quarto = {
 </header>
 
 
+<section id="projetos-em-destaque" class="level2">
+<h2 class="anchored" data-anchor-id="projetos-em-destaque">Projetos em Destaque</h2>
 <div id="listing-ehr" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="QW4lQzMlQTFsaXNlJTIwRXNwYWNpYWwlMkNEZXNmbG9yZXN0YW1lbnRvJTJDQWdyb3BlY3UlQzMlQTFyaWE=" data-listing-file-modified-sort="1745238445198" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
+<div class="g-col-1" data-index="0" data-categories="Análise Espacial,Desflorestamento,Agropecuária" data-listing-file-modified-sort="1794154177620" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
 <a href="../projects/project_1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -232,24 +270,24 @@ window.Quarto = {
 Análise Espacial do Impacto da Agropecuária na Taxa de Desflorestamento dos Biomas Brasileiros
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QW4lQzMlQTFsaXNlJTIwRXNwYWNpYWw='); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Análise Espacial'); return false;">
 Análise Espacial
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGVzZmxvcmVzdGFtZW50bw=='); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Desflorestamento'); return false;">
 Desflorestamento
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QWdyb3BlY3UlQzMlQTFyaWE='); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Agropecuária'); return false;">
 Agropecuária
 </div>
 </div>
 <div class="card-text listing-description">
-O objetivo deste projeto é analisar o impacto da expansão da agropecuária na taxa de desflorestamento a nível de biomas brasileiros.
+Análise econométrica espacial do impacto da expansão agropecuária na taxa de desflorestamento em nível de biomas brasileiros.
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5kJUMzJUJBc3RyaWElMkNBbiVDMyVBMWxpc2UlMjBFc3BhY2lhbCUyQ1JlZ2lvbmFs" data-listing-file-modified-sort="1745238445198" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
+<div class="g-col-1" data-index="1" data-categories="Indústria,Análise Espacial,Regional" data-listing-file-modified-sort="1794154153907" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
 <a href="../projects/project_2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -257,18 +295,18 @@ O objetivo deste projeto é analisar o impacto da expansão da agropecuária na 
 Desindustrialização Brasileira
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW5kJUMzJUJBc3RyaWE='); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Indústria'); return false;">
 Indústria
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('QW4lQzMlQTFsaXNlJTIwRXNwYWNpYWw='); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Análise Espacial'); return false;">
 Análise Espacial
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('UmVnaW9uYWw='); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Regional'); return false;">
 Regional
 </div>
 </div>
 <div class="card-text listing-description">
-O objetivo deste projeto é a análise da evidência da desindustrialização a nível regional no Brasil a partir de técnicas e análises espciais.
+Análise da evidência da desindustrialização em nível regional no Brasil a partir de técnicas de econometria espacial.
 </div>
 </div>
 </div>
@@ -276,26 +314,24 @@ O objetivo deste projeto é a análise da evidência da desindustrialização a 
 </div>
 </div>
 <div class="listing-no-matching d-none">
-No matching items
+Sem itens correspondentes
 </div>
 </div>
+</section>
 <section id="artigos-completos-publicados-em-periódicos" class="level2">
 <h2 class="anchored" data-anchor-id="artigos-completos-publicados-em-periódicos">Artigos completos publicados em periódicos</h2>
-<p>CATEIA, JULIO VICENTE; SAVARD, LUC; ALMEIDA, EDIVO OLIVEIRA DE; <strong>BARBOSA, W.</strong> Informality, Trade Facilitation, and Trade Flows: Evidence from Guinea-Bissau. INTERNATIONAL JOURNAL OF ECONOMICS AND FINANCE. , v.14, p.21, 2022.</p>
-<p>CATEIA, J. V.; OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ESTIMAÇÃO DO COMÉRCIO INTERNACIONAL BRASILEIRO EM CLUSTERS. Análise Econômica (UFRGS) on line. , v.39, p.133 - 160, 2021. Referências adicionais: Português.</p>
-<p><strong>BARBOSA, W.</strong>; OLIVEIRA, E. A.; CATEIA, J. V. Farming and Deforestation in MATOPIBA Municipalities: A Spatial Analysis. JOURNAL OF INTERNATIONAL AND GLOBAL ECONOMIC STUDIES., v.14, p.1-14 - , 2021.</p>
-<p>OLIVEIRA, E. A.; FEISTEL, P. R.; <strong>BARBOSA, W.</strong> O Pecado Original Doméstico: Uma Análise Da Experiência Brasileira Entre 2001 A 2016. ESTUDO &amp; DEBATE (ONLINE)., v.26, p.7 - 33, 2019.</p>
-<p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ; CATEIA, J. V.; FEISTEL, P. R. AS EXPORTAÇÕES BRASILEIRAS POR GRAU DE ELABORAÇÃO ENTRE 1980 E 2015: APLICAÇÃO DO MODELO EATON-KORTUM À LUZ DA TEORIA CEPALINA. Análise Econômica (UFRGS) on-line. , v.36, p.179 - 201, 2018.</p>
-<p>SILVA, J. V. S.; <strong>BARBOSA, W.</strong> ; FREITAS, C. A. Complementaridade Comercial entre Brasil e América do Sul: Aplicação do modelo gravitacional em dados em painel para o mercado de bens de alta intensidade tecnológica. RBEE. REVISTA BRASILEIRA DE ECONOMIA DE EMPRESAS. , v.18, p.43 - 63, 2018.</p>
-<p>SILVA, J. V. S.; <strong>BARBOSA, W.</strong> A América do Sul no Dinamismo Comercial Brasileiro: Um Estudo Das Complementaridades Por Intensidade Tecnológica. OBSERVATORIO DE LA ECONOMÍA LATINOAMERICANA. , v.3, p.1-17 - , 2017.</p>
-<p><strong>BARBOSA, W.</strong> ; OLIVEIRA, E. A.; FREITAS, C. A.; SILVA, J. V. S. UMA ANÁLISE DA CURVA DE KUZNETS PARA OS MUNICÍPIOS BRASILEIROS (1991, 2000, 2010). ECONOMIA &amp; REGIÃO. , v.5, p.65 - 83, 2017.</p>
-<p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ; ROHENKOHL, J. E. CRISE SUBPRIME: UMA EXPLICAÇÃO COM BASE NO CONCEITO DE DIREITOS DE PROPRIEDADE. Revista da FAE. , v.19, p.52 - 74, 2016.</p>
-<p><strong>BARBOSA, W.</strong> ; OLIVEIRA, E. A.; FREITAS, C. A.; FEISTEL, P. R. MIGRAÇÕES INTERESTADUAIS: UMA APLICAÇÃO DO MODELO GRAVITACIONAL PARA OS ESTADOS BRASILEIROS. Revista Brasileira de Estudos Regionais e Urbanos. , v.10, p.156 - 176, 2016.</p>
-<p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ; FREITAS, C. A. Ordem e caos: um conceito alternativo de mercado. Estudos do CEPE. , p.04 - , 2016.</p>
-<p><strong>BARBOSA, W.</strong> ; PELINSKI, A. R.; CARMO, A. S. S. Existe desindustrialização no Estado do Paraná? um teste empírico para o período de 1996 a 2012. INFORME GEPEC (ONLINE). , v.19, p.55 - 79, 2015.</p>
-<!-- ## Eventos
-
-## Revisão de períodicos -->
+<p>CATEIA, JULIO VICENTE; SAVARD, LUC; ALMEIDA, EDIVO OLIVEIRA DE; <strong>BARBOSA, W.</strong> Informality, Trade Facilitation, and Trade Flows: Evidence from Guinea-Bissau. <em>INTERNATIONAL JOURNAL OF ECONOMICS AND FINANCE</em>, v. 14, p.&nbsp;21, 2022.</p>
+<p>CATEIA, J. V.; OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ESTIMAÇÃO DO COMÉRCIO INTERNACIONAL BRASILEIRO EM CLUSTERS. <em>Análise Econômica (UFRGS) on-line</em>, v. 39, p.&nbsp;133–160, 2021.</p>
+<p><strong>BARBOSA, W.</strong>; OLIVEIRA, E. A.; CATEIA, J. V. Farming and Deforestation in MATOPIBA Municipalities: A Spatial Analysis. <em>JOURNAL OF INTERNATIONAL AND GLOBAL ECONOMIC STUDIES</em>, v. 14, p.&nbsp;1–14, 2021.</p>
+<p>OLIVEIRA, E. A.; FEISTEL, P. R.; <strong>BARBOSA, W.</strong> O Pecado Original Doméstico: Uma Análise da Experiência Brasileira entre 2001 a 2016. <em>ESTUDO &amp; DEBATE (ONLINE)</em>, v. 26, p.&nbsp;7–33, 2019.</p>
+<p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong>; CATEIA, J. V.; FEISTEL, P. R. AS EXPORTAÇÕES BRASILEIRAS POR GRAU DE ELABORAÇÃO ENTRE 1980 E 2015: APLICAÇÃO DO MODELO EATON-KORTUM À LUZ DA TEORIA CEPALINA. <em>Análise Econômica (UFRGS) on-line</em>, v. 36, p.&nbsp;179–201, 2018.</p>
+<p>SILVA, J. V. S.; <strong>BARBOSA, W.</strong>; FREITAS, C. A. Complementaridade Comercial entre Brasil e América do Sul: Aplicação do modelo gravitacional em dados em painel para o mercado de bens de alta intensidade tecnológica. <em>RBEE. REVISTA BRASILEIRA DE ECONOMIA DE EMPRESAS</em>, v. 18, p.&nbsp;43–63, 2018.</p>
+<p>SILVA, J. V. S.; <strong>BARBOSA, W.</strong> A América do Sul no Dinamismo Comercial Brasileiro: Um Estudo das Complementaridades por Intensidade Tecnológica. <em>OBSERVATORIO DE LA ECONOMÍA LATINOAMERICANA</em>, v. 3, p.&nbsp;1–17, 2017.</p>
+<p><strong>BARBOSA, W.</strong>; OLIVEIRA, E. A.; FREITAS, C. A.; SILVA, J. V. S. UMA ANÁLISE DA CURVA DE KUZNETS PARA OS MUNICÍPIOS BRASILEIROS (1991, 2000, 2010). <em>ECONOMIA &amp; REGIÃO</em>, v. 5, p.&nbsp;65–83, 2017.</p>
+<p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong>; ROHENKOHL, J. E. CRISE SUBPRIME: UMA EXPLICAÇÃO COM BASE NO CONCEITO DE DIREITOS DE PROPRIEDADE. <em>Revista da FAE</em>, v. 19, p.&nbsp;52–74, 2016.</p>
+<p><strong>BARBOSA, W.</strong>; OLIVEIRA, E. A.; FREITAS, C. A.; FEISTEL, P. R. MIGRAÇÕES INTERESTADUAIS: UMA APLICAÇÃO DO MODELO GRAVITACIONAL PARA OS ESTADOS BRASILEIROS. <em>Revista Brasileira de Estudos Regionais e Urbanos</em>, v. 10, p.&nbsp;156–176, 2016.</p>
+<p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong>; FREITAS, C. A. Ordem e caos: um conceito alternativo de mercado. <em>Estudos do CEPE</em>, p.&nbsp;04, 2016.</p>
+<p><strong>BARBOSA, W.</strong>; PELINSKI, A. R.; CARMO, A. S. S. Existe desindustrialização no Estado do Paraná? Um teste empírico para o período de 1996 a 2012. <em>INFORME GEPEC (ONLINE)</em>, v. 19, p.&nbsp;55–79, 2015.</p>
 
 
 
@@ -345,12 +381,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiada");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -384,6 +420,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -392,7 +430,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/wquant\.com\.br\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -406,6 +444,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -494,6 +537,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -723,13 +767,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2023, William Barbosa</p>
+<p>© 2026 William Barbosa · <a href="https://wquant.com.br/">WQuant</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Essa página foi construída com <a href="https://quarto.org/">Quarto</a>.</p>
+<p>Desenvolvido com <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
   </div>
 </footer>
@@ -737,4 +781,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

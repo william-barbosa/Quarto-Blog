@@ -7,21 +7,10 @@
     ]
   },
   {
-    "listing": "/Artigos/index.html",
-    "items": []
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/blog/Classes e Objetos/index.html",
       "/blog/Introdução ao R/index.html"
-    ]
-  },
-  {
-    "listing": "/talks/index.html",
-    "items": [
-      "/talks/talk_1/index.html",
-      "/talks/talk_2/index.html"
     ]
   }
 ]

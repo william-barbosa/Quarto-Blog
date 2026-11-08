@@ -1,9 +1,10 @@
 ---
 title: "Desindustrialização Brasileira"
+description: "Análise da evidência da desindustrialização em nível regional no Brasil a partir de técnicas de econometria espacial."
 categories: [Indústria, Análise Espacial, Regional]
 image: "image.jpg"
 ---
 
-O objetivo deste projeto é a análise da evidência da desindustrialização a nível regional no Brasil a partir de técnicas e análises espciais.
+O objetivo deste projeto é a análise da evidência da desindustrialização em nível regional no Brasil a partir de técnicas e análises espaciais.
 
-- Em desenvolvimento
+- **Status:** Em desenvolvimento.

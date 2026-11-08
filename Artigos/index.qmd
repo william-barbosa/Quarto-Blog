@@ -1,55 +1,13 @@
 ---
 title: "Produção Acadêmica"
 description: |
-  Arigos publicados em períodicos e eventos.
-listing:
-  - id: ehr
-    max-description-length: 500
-    image-height: 150px
-    fields: [title, description,categories]
-    contents:
-      - project_1
-      - project_2
-    type: grid
-    grid-item-border: true
-    grid-columns: 2
-
+  Artigos publicados em periódicos e eventos científicos.
 toc: false
-title-block-style: plain
-  # - id: packages
-  #   max-description-length: 80
-  #   image-height: 250px
-  #   fields: [title, description]
-  #   contents:
-  #     - pkg_1
-  #     - pkg_2
-  #   type: table
-  #   grid-item-border: false
-  #   sort-ui: false
-  #   filter-ui: false
-sidebar: false
+title-block-style: default
 ---
-
-
 
 ## Resumo
 
-O objetivo é a apresentação de como as técnicas de machine learning podem ser empregadas para a elaboração de trabalhos acadêmicos e análises. Os projetos listados serão executados com bases de dados públicos, temas variados e sem fins lucrativos, dedicando-se na demonstração para a comunidade interessada na elaboração e divulgação científica.
+O objetivo é apresentar como técnicas de econometria e *Machine Learning* podem ser empregadas na elaboração de trabalhos acadêmicos e análises empíricas. Os estudos listados utilizam bases de dados públicas e dedicam-se à divulgação científica reprodutível.
 
-::: {#ehr}
-:::
-
-
-<!-- ## Table listing
-
-This is an example of **table** listing.
-
-### Packages
-
-::: {#packages}
-::: -->
-
-
-
-
-
+Consulte a lista completa de projetos e artigos publicados na página [Projetos & Publicações](../projects/index.qmd).

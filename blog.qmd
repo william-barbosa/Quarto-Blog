@@ -1,19 +1,14 @@
 ---
 title: "Posts"
-lang: pt
-subtitle: "Seja bem vindo ao meu blog!"
+subtitle: "Estudos sobre finanças quantitativas, tutoriais de programação e análises de cenários econômicos."
 title-block-banner: false
-# description: |  Seja bem vindo ao meu blog!
 listing:
   contents: blog
   sort: "date desc"
   type: default
-  categories: false
+  categories: true
   sort-ui: true
   filter-ui: true
-  # date-format: short
-sidebar: false
 grid-item-border: true
+toc: false
 ---
-
-<!-- Seja bem vindo ao meu blog 2! -->

@@ -1,542 +1,359 @@
 /*-- scss:defaults --*/
 
-$theme: "journal" !default;
-
+$theme: "cosmo" !default;
 
 //
-// Color system
+// Paleta de cores inspirada na identidade visual do WQuant (wquant.com.br)
 //
 
-$black-Nav: rgb(58, 58, 58)!important;
+$white:       #ffffff !default;
+$gray-100:    #f7f8f9 !default;
+$gray-200:    #eef0f3 !default;
+$gray-300:    #dee2e6 !default;
+$gray-400:    #ced4da !default;
+$gray-500:    #8c939e !default;
+$gray-600:    #575760 !default;
+$gray-700:    #3f434a !default;
+$gray-800:    #222222 !default;
+$gray-900:    #0f172a !default;
+$black:       #000000 !default;
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #eee !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #aaa !default;
-$gray-600: #777 !default;
-$gray-700: #495057 !default;
-$gray-800: #333 !default;
-$gray-900: #222 !default;
-$black:    #000 !default;
+$navy-dark:   #0f172a !default;
+$accent-blue: #1e73be !default;
+$accent-hover:#155a96 !default;
 
-$blue:    #eb6864 !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #f57a00 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #f5e625 !default;
-$green:   #22b24c !default;
-$teal:    #20c997 !default;
-$cyan:    #369 !default;
+$blue:        $accent-blue !default;
+$indigo:      #4f46e5 !default;
+$purple:      #6f42c1 !default;
+$pink:        #d63384 !default;
+$red:         #dc2626 !default;
+$orange:      #ea580c !default;
+$yellow:      #eab308 !default;
+$green:       #16a34a !default;
+$teal:        #0d9488 !default;
+$cyan:        #0284c7 !default;
 
-$primary:       $blue !default;
-$secondary:     $gray-500 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$primary:     $accent-blue !default;
+$secondary:   $gray-600 !default;
+$success:     $green !default;
+$info:        $cyan !default;
+$warning:     $yellow !default;
+$danger:      $red !default;
+$light:       $gray-100 !default;
+$dark:        $navy-dark !default;
 
-$min-contrast-ratio:   1.28 !default;
+// Corpo e tipografia
+$body-bg:                $white !default;
+$body-color:             $gray-800 !default;
+$link-color:             $primary !default;
+$link-hover-color:       $accent-hover !default;
+$link-decoration:        none !default;
+$link-hover-decoration:  underline !default;
 
-// Fonts
+$font-family-sans-serif: "Inter", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !default;
+$font-family-monospace:  "JetBrains Mono", "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, monospace !default;
+$headings-font-family:   $font-family-sans-serif !default;
+$headings-font-weight:   700 !default;
+$headings-line-height:   1.3 !default;
+$headings-color:         $navy-dark !default;
 
-$headings-font-family:   "CMU Serif", sans-serif !default;
-$headings-font-weight:    700 !default;
-$headings-line-height:    2 !default;
+// Navbar e Rodapé
+$navbar-bg:              $navy-dark !default;
+$navbar-fg:              $white !default;
+$navbar-hl:              #60a5fa !default;
 
+$footer-bg:              $gray-100 !default;
+$footer-fg:              $gray-600 !default;
 
-// Buttons
+// Botões e Paginação
+$input-btn-padding-x:           1rem !default;
+$pagination-hover-color:        $white !default;
+$pagination-hover-bg:           $primary !default;
+$pagination-hover-border-color: $primary !default;
 
-$input-btn-padding-x:         1rem !default;
-
-// Navbar
-
-// Pagination
-
-$pagination-hover-color:            $white !default;
-$pagination-hover-bg:               $primary !default;
-$pagination-hover-border-color:     $primary !default;
-
-// largura do texto
-$grid-body-width: 900px !default;
-
-// espaço a esquerda
-$grid-margin-width: 300px !default;
+// Grid do Quarto
+$grid-body-width:   920px !default;
+$grid-margin-width: 260px !default;
 
 /*-- scss:rules --*/
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 
-// Variables
-
-$web-font-path: "https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" !default;
-@if $web-font-path {
-  @import url($web-font-path);
-}
-
-
-// Navbar
-
-/* Ajuste da página */
-// .selector-for-some-widget {
-//   box-sizing: content-box;
-// }
-
-// .blog-description {
-//   font-size: 1.1rem;
-//   color: #ff0000;
-// }
-
-/* Formatação geral da fonte cores de texto no geral */
 body {
-  font-family: "Roboto", "Source Sans Pro" !important;
-  color: $black-Nav;
-   background: white!important;
+  font-family: $font-family-sans-serif;
+  color: $body-color;
+  background-color: $body-bg;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
-
-
-/* Espaçamento superior: espaço entre o conteúdo e o navbar na página inicial*/
-div.quarto-about-trestles {
-  background-color: $white;
-  display: flex !important;
-  flex-direction: row;
-  width:fit-content;
-  padding-top: 2px !important;
-  // padding-bottom: 2em;
-  // margin-left: 1em;
-  // margin-right: 15em;
-}
-// Formatando a imagem do perfil
-div.quarto-about-trestles .about-entity {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-right: 0px;
-  row-gap: 1px!important;
-}
-// Formatação do título do banner!
-.quarto-title-banner {
-    padding-top: 5px;
-    padding-bottom: 2px;
-    color: white!important;
-    background: $black-Nav;
-    // position:absolute!important;
-}
-
 
 /* Barra de Navegação */
-.navbar{/* Altera cor do navbar rgb(0, 128, 0) */
-  /* background-color: rgb(0, 128, 0); */
-  background-color: $black-Nav;
-  padding-left: 20px!important; /* 75px*/
+.navbar {
+  background-color: $navy-dark;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.12);
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
 }
 
-// .nav-container{
-//     padding-top: 0;
-//     padding-bottom: 0;
-// }
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  color: $white;
+  transition: color 0.2s ease;
 
-
-// Formatação do botão inicial
-.navbar-dark .navbar-brand{
-  color: $white!important;
-  font-family: "Roboto", "Source Sans Pro" !important;
-  font-size: 14px!important;
- }
-
- /* cor quando passa o mouse por cima do botão principal */
-.navbar-dark .navbar-brand:hover{
-    color: $primary!important;
-    font-size: 15px!important;
-}
-/* Formataçã de fontes e cores dos itens do navbar*/
-.navbar .navbar-nav li a{
-    // color: $white!important;
-    font-family: "Roboto", "Source Sans Pro" !important;
-    font-size: 15px!important;
-}
-
-/* Cor e formatação quando passar o mouse por cima dos itens do dropdown*/
-.navbar .dropdown-item {
-  padding: .4rem .5rem;
-  background: $black-Nav!important;
+  &:hover,
+  &:focus {
+    color: #93c5fd;
+  }
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  font-family: "Roboto", "Source Sans Pro" !important;
-  padding-left: .6rem;
-  padding-right: .6rem;
-  color: white!important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: #93c5fd;
+  }
 }
 
-//cor do hover no navbar
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: $primary!important;
-}
-// hover no dropdown
-.navbar .dropdown-item:hover{
-  color: $primary!important;
-}
-
-
-// Formatando o sidebar
-// div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, nav.sidebar.sidebar-navigation:not(.rollup) {
-//   background-color: red;
-//   color: red!important;
-// }
-
-// .sidebar-navigation a {
-//   color: $black-Nav;
-//   font-family: "Red Hat Text", "Source Sans Pro" !important;
-// }
-// div.sidebar-item-container:hover, div.sidebar-item-container:focus {
-//   background: green!important;
-// }
-// fim do sidebar
-
-
-
-// div.quarto-about-trestles .about-entity .about-image {
-//   object-fit: cover;
-//   margin-bottom: 0em;
-//   margin-left: 10em;
-// }
-
-// Formata o texto
-// div.quarto-about-trestles .about-entity {
-//   display: flex !important;
-//   flex-direction: column;
-//   align-items: center;
-//   text-align: center;
-//   padding-right: 0em;
-// }
-
-
-
-
-// // #LinkSide{/* Parte de baixo do Sidebar dos Links*/
-// //     border: 1px solid rgb(0, 0, 0)!important;
-// //     margin-top: 40px!important;
-// //     /*position: fixed!important;*/
-// // }
-
-
-/* Altera o container (resumo das postagens) */
-.container .blog-post{
-/*    background-color: red!important;*/
-    border-top: 1px solid #ccc!important;
-    margin-right: 0!important;
-    /*width: 800px!important;*/
-    /*background: #333;*/
-    background-color: white!important;
-    margin-top: 1px!important;
-    margin-bottom: 55px!important;
-
+.navbar .dropdown-menu {
+  background-color: $navy-dark;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.25);
 }
 
+.navbar .dropdown-item {
+  color: rgba(255, 255, 255, 0.88);
+  padding: 0.45rem 1rem;
+  font-size: 0.9rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
 
-// .list.quarto-listing-default div:last-of-type {
-//   border-bottom: none;
-//   color: red!important;
-//   font-family: "Red Hat Text", "Source Sans Pro" !important;
-// }
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #93c5fd;
+  }
+}
 
+/* Banner de Título das Postagens */
+.quarto-title-banner {
+  background-color: $navy-dark;
+  color: $white;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  margin-bottom: 2rem;
+
+  .title,
+  .subtitle,
+  .description {
+    color: $white;
+  }
+}
+
+/* Cabeçalho de Páginas Internas (exceto dentro do componente About) */
+main.content > header#title-block-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $gray-300;
+}
+
+/* Componente About (Trestles) — Alinhado e Responsivo */
+div.quarto-about-trestles {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  gap: 2.5rem;
+
+  .about-entity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+
+    .about-image {
+      object-fit: cover;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+      border: 3px solid $gray-200;
+    }
+
+    header#title-block-header {
+      border-bottom: none;
+      margin-bottom: 0.25rem;
+      padding-bottom: 0;
+
+      .title {
+        font-size: 1.75rem;
+        margin-bottom: 0.35rem;
+      }
+
+      .subtitle {
+        font-size: 0.95rem;
+        color: $gray-600;
+        line-height: 1.45;
+      }
+    }
+
+    .about-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+
+      .about-link {
+        padding: 0.4rem 0.75rem;
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $navy-dark;
+        border: 1px solid $gray-300;
+        background-color: $gray-100;
+        transition: all 0.2s ease;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $primary;
+          border-color: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .about-contents {
+    border-left: 1px solid $gray-300;
+    padding-left: 2rem;
+
+    h2, h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+      color: $navy-dark;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  div.quarto-about-trestles {
+    flex-direction: column;
+    gap: 1.75rem;
+
+    .about-contents {
+      border-left: none;
+      border-top: 1px solid $gray-300;
+      padding-left: 0;
+      padding-top: 1.5rem;
+    }
+  }
+}
+
+/* Listagem de Postagens (Blog) */
 .listing-actions-group {
   display: flex;
-  border-bottom: 1px solid #dee2e6!important;
-  padding-bottom: 10px;
-  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid $gray-300;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.75rem;
 }
 
 div.quarto-post {
   display: flex;
-  gap: 2em;
-  margin-bottom: 1.5em;
-  border-bottom: 1px solid #dee2e6!important;
+  gap: 1.75rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid $gray-300;
+  align-items: flex-start;
+
+  .body {
+    h3.listing-title,
+    .listing-title.h3 {
+      margin-top: 0;
+      margin-bottom: 0.4rem;
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 1.35;
+
+      a {
+        color: $navy-dark;
+        text-decoration: none;
+        transition: color 0.15s ease;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+    .listing-description a {
+      color: $gray-600;
+      text-decoration: none;
+    }
+  }
+
+  .metadata a {
+    color: $gray-600;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
 }
 
-// Formata o título dos posts na lista  do blog
-div.quarto-post .body h3.listing-title, div.quarto-post .body .listing-title.h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border-bottom: none;
-  color: $black-Nav;
-  font-family: "Roboto" !important;
-  font-weight: bold!important;
+@media (max-width: 767.98px) {
+  div.quarto-post {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
-div.quarto-post a {
-  color: $black-Nav;
-  font-family: "Roboto" !important;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-}
-
-.list.quarto-listing-default div:last-of-type {
-  font-family: "Roboto" !important;
-  color: black;
-}
-
-
-// Alinhamento dos ícones das redes sociais abaixo do título do Banner
-// div.quarto-about-trestles .about-entity .about-links {
-//   // flex-direction: row;
-//   // column-gap: .8em;
-//   // row-gap: 2em;
-//   // flex-wrap: wrap;
-//   color: green!important;
-//   margin-left: 0em;
-//   // margin-top: 2em;
-
-// }
-
-.quarto-title .quarto-categories .quarto-category {
-  padding: .25em .75em;
-  color: white!important;
-  font-size: .9em;
+/* Categorias e Tags */
+.quarto-title .quarto-categories .quarto-category,
+.listing-categories .listing-category {
+  padding: 0.2em 0.65em;
+  font-size: 0.78rem;
+  font-weight: 600;
   text-transform: uppercase;
-  border: solid 1px;
-  border-radius: .25rem;
-  // opacity: .6;
+  letter-spacing: 0.03em;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease;
 }
 
+.quarto-title-banner .quarto-categories .quarto-category {
+  color: $white;
+  background-color: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 
-
-
-// /*Definindo cores dos parágrafos e dos li's*/
-// p, li{
-//     color: black!important;
-//     font-size:15px!important;
-// }
-
-
-// .container-fluid {padding-left: 1000px;
-//     padding: 0 !important;
-
-//     margin-left: auto !important;
-//     margin-right: auto !important;
-// }*/
-// /*
-// .container{
-//     width: 100%;
-// }
-// */
-// /* Altera o botão 'inicial'*/
-
-
-
-
-
-
-// /* Alterando as margens da postagem na página inicial*/
-// .blog-post {
-// /*     width: 1020px!important; */
-//     margin-bottom: 4rem;
-//     color: blue!important; /* não está afetando nada*/
-// }
-
-
-
-
-// /* Altera cor da fonte do botão "leia mais..." */
-// .blog-post #teste {
-//     color: blue!important;
-//     text-decoration: none;
-//     font-family: "Red Hat Text", "Source Sans Pro"!important;
-//     font-weight: normal!important;
-//     font-style: normal!important;
-// }
-
-// /* Alterar o botão de próxima página*/
-// .btn-outline-primary, .btn-outline-primary.disabled, .btn-outline-primary:disabled{
-//     color:black!important;
-//     border-color: black!important;
-//     font-family: "Red Hat Text", "Source Sans Pro"!important;
-//     font-weight: normal!important;
-//     font-style: normal!important;
-// }
-// .btn-outline-primary:hover{
-//     background-color:blue!important;
-// }
-
-// /********* Altera o hero ********/
-// .hero-body {
-//     background-position: left;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-color: blue!important;
-//     padding-left: 0px !important;
-
-
-//   /*  margin-top: 1px!important;
-//     margin-bottom: 1px!important;
-//     padding-bottom: 10px!important;*/
-//     }
-// /* Alterando o background do heros
-// 'Hero' é o cabeçalho e o código está localizado no arquivo "cabecalho.html",
-// a grosso modo ele é um banner que aparece na largura da página
-// */
-// .hero.is-info {
-//     background-color: red!important;
-//     height: 100px!important;
-//     padding-left: 0px !important;
-// }
-
-// .hero .container {
-//     background-color: $white !important;
-//     font-family:  "Red Hat Text", "Source Sans Pro" !important;
-//     padding-left: 0px !important;
-//     padding-top: 0px !important;
-// }
-// /* 'Lucida Sans','Lucida Sans Regular',*/
-// /*
-// .hero.is-info .title{
-//     color: rgb(228, 15, 15);
-//     font-family: "Lucinda Grande";
-// }
-// */
-
-
-// /*Alterando o radapé */
-// .blog-footer{
-//     background-color: rgb(58, 58, 58)!important;
-//     /* height: 110px!important;*/
-//     padding: 15px!important;
-// }
-// .blog-footer p a{
-//     color: white!important;
-//     text-decoration: underline;
-//     font-family: "Red Hat Text", "Source Sans Pro"!important;
-//     font-size:18px!important;
-// }
-
-// #CriadoBy {
-//     color: white!important;
-//     font-family: "Red Hat Text", "Source Sans Pro"!important;
-//     font-size:14px!important ;
-// }
-
-// #testeP{
-//     color: tomato !important;
-// }
-// .blog-footer br{/* Espaço dentre itens: utilizado no footer*/
-//     content: ""!important;
-//     margin: 2em!important;
-//     display: block!important;
-//     font-size: 15%!important;
-//     outline: red!important;
-// }
-
-// /* Formatando datas e itens da data das postagens*/
-// //.quarto-title{//título "Postagens"
-//   // .blog-post-title{
-//   //     color:red!important;
-//   //     font-size:36px;
-//   // }
-
-
-// .quarto-listing .listing-date{/*data*/
-//   color: red!important;
-//   font-family: "Red Hat Text", "Source Sans Pro"!important;
-// }
-// .quarto-listing .listing-author{/* autor*/
-//   color: red!important;
-//   font-family: "Red Hat Text", "Source Sans Pro"!important;
-// }
-// .quarto-listing .listing-title{
-//   color: red!important;
-//   font-family: "Red Hat Text", "Source Sans Pro"!important;
-// }
-
-// .quarto-listing-category-title{
-//   color: red!important;
-// }
-
-
-// /* Formatando os cards (blog-sidebar)*/
-// .column-margin figcaption, .margin-caption, div.aside, aside, .column-margin {
-//   color: black!important;
-//   font-size: .825rem;
-// }
-
-
-// /* Formatando as postagens */
-// // #title-block-header.quarto-title-block.default .quarto-title .title {
-// //   margin-bottom: 0;
-// //   color: rgb(0, 0, 0);
-// // }
-
-
-#title-block-header {
-  margin-block-end: 1rem;
-  position: relative;
-  margin-top: -1px;
-  border-bottom: 1px solid #dee2e6!important;
-  margin-bottom: 25px;
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+  }
 }
 
-// // .nav-fixed fullcontent quarto-light{
-// //   color:red
-// // }
+/* Cards de Projetos */
+.quarto-grid-item.card {
+  border: 1px solid $gray-300;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
 
-// // .quarto-title > h1.title {
-// //   opacity: 0 !important;
-// // }
-
-// // Formatando hero
-// // .hero-heading{
-// //   color: red !important;
-// // }
-
-// // .div.about-content {
-// //   color: red!important;
-// // }
-
-// // div.abstract-title {
-// //   visibility: hidden;
-// // }
-
-// // div.abstract-title:before {
-// //   content: "How to cite";
-// //   visibility: visible;
-// // }
-
-
-// .about-contents .p .li{
-//   color: #20c997 !important;
-
-// }
-
-#miniBio {
-  // font-family: 'CMUSerifRoman','sans-serif' !important;
-  // font-size: 20px!important;
-  color: #22b24c !important;
-  // border: 5px solid grey;
-  // background-color: #ccc;
-  width: 600px;
-  margin: 00px;
-  padding: 0px;
-  margin-left: 0em;
-
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+  }
 }
 
-// #hero-heading{
-//     color: red !important;
-//     // padding-right: 10px!important;
-//     // width: 400px;
-//   }
-// #quarto-document-content{
-//   padding-left: 150px!important;
-// }
-
-  // #quarto-content{
-  //   padding-top: 14px;
-  //   padding-left: 50px;
-  // }
-
+/* Rodapé */
+.nav-footer {
+  border-top: 1px solid $gray-300;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 0.9rem;
+}

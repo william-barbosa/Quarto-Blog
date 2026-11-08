@@ -1,61 +1,51 @@
 ---
-title: "VS Code e R"
+title: "Como instalar o software R e o VS Code: Guia Completo de Instalação e Configuração"
 title-block-banner: true
 author: "William Barbosa"
-description: |
-  Instalando e configurando o R e Visual Studio Code
-date: "2023-11-15"
-categories: [R,VS Code]
+description: "Guia prático para instalação e configuração do ambiente de desenvolvimento R utilizando o Visual Studio Code."
+date: "2026-01-27"
+categories: [Tutoriais, R, VS Code]
 image: "Rlogo.svg"
-lang: pt
-sidebar: false
+lang: pt-BR
 ---
 
-# Objetivo
+## Objetivo
 
-Este post tem por objetivo o auxílio para instalação e configuração do R.
+O objetivo deste post é auxiliar na instalação e configuração do ambiente de desenvolvimento R utilizando o VS Code.
 
-# Primeiros passos
+## Primeiros passos
 
-É notável que atualmente existem inúmeros benefícios para a utilização da IDE [Rstudio](https://posit.co/download/rstudio-desktop/), porém, existem muitos outros problemas e gargalos na sua utilização comprometem a produtividade do trabalho no dia a dia. Em 2023 o Stack Overflow
-lançou uma [pesquisa](https://survey.stackoverflow.co/2023/#worked-with-vs-want-to-work-with-new-collab-tools-worked-want) e constatou que 73.71% programadores tinham o VS Code como IDE preferido e apenas 2.71% o RStudio. Portanto, esse fato revela não apenas a popularidade, mas revela que existem uma série de benefícios e facilidades na utilização dessa IDE.
+É notável que atualmente existem inúmeros benefícios para a utilização da IDE [RStudio](https://posit.co/download/rstudio-desktop/), porém, existem gargalos na sua utilização que podem comprometer a produtividade no dia a dia. Em 2023, o Stack Overflow lançou uma [pesquisa](https://survey.stackoverflow.co/2023/#worked-with-vs-want-to-work-with-new-collab-tools-worked-want) e constatou que 73,71% dos programadores tinham o VS Code como IDE preferido e apenas 2,71% o RStudio. Portanto, esse fato revela não apenas a popularidade, mas também uma série de benefícios e facilidades na utilização dessa IDE.
 
-Para que seja possível a programação em R no VS Code é necessário adotar alguns passos inicias:
+Para programar em R no VS Code, siga estes passos iniciais:
 
-1. Baixar o R interpretador via [CRAN](https://cran.r-project.org/);
-2. Realizar a instalação e localizar o referido camimho. É indicado que seja sempre instalado em uma pasta que não necessite de permissão para modificação ou instalação de pacotes; No caso, a instalação pode ser realizada em `C:\Users\seu_usuario\Documents\R-4.3.2`;
-3. Abrir o R via terminal (`C:\Users\seu_usuario\Documents\R-4.3.2\bin\x64\R.exe`) e instalar os seguintes pacotes:
-  * `install.packages("languageserver")`. Nessa etapa será solicitado para selecionar o espelho do CRAN para baixar os pacotes (é indicado que o usuário selecione a opção mais próxima de sua região.);
+1. Baixar o interpretador R via [CRAN](https://cran.r-project.org/);
+2. Realizar a instalação e localizar o referido caminho. É indicado que seja sempre instalado em uma pasta que não necessite de permissão de administrador para modificação ou instalação de pacotes (por exemplo, `C:\Users\seu_usuario\Documents\R-4.3.2`);
+3. Abrir o R via terminal (`C:\Users\seu_usuario\Documents\R-4.3.2\bin\x64\R.exe`) e instalar o pacote de suporte à linguagem:
+   - Execute `install.packages("languageserver")`. Nessa etapa será solicitado selecionar o espelho do CRAN para baixar os pacotes (recomenda-se escolher a opção mais próxima de sua região);
 4. Instalar o [VS Code](https://code.visualstudio.com/);
-5. Abrir o VS Code e instalar a extensão própria para o [R](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r) com os seguintes passos:
-  * Usar o atalho **Ctrl + Shift + X**:
-\
-  ![](ExtensaoR.jpg)
-6. Posteriormente, deve-se configurar os caminhos editando as configurações. Por ser mais rápido, indica-se o seguinte procedimento:
-  * Usar o atalho `Ctrl + Shift + P` e digitar "Preferências" na barra de pesquisa que será aberta, editar o arquivo conforme a segunda imagem, salvar e fechar:
-\
-![](abre_settings.png)
-\
-\
-![](configuracoes.png)
+5. Abrir o VS Code e instalar a extensão oficial para o [R](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r):
+   - Use o atalho **Ctrl + Shift + X** e pesquise pela extensão **R**:
 
-7. Pronto, se tudo estiver configurado conforme acima, o `R` já estará pronto para ser aberto no terminal. Para isso, basta clicar em 'Arquivo' como na primeira opção abaixo e na segunda opção:
-\
-![](Novo_R.png)
+   ![Instalação da extensão R no VS Code](ExtensaoR.jpg)
 
+6. Posteriormente, configure os caminhos editando o arquivo de configurações (`settings.json`):
+   - Use o atalho **Ctrl + Shift + P**, digite `"Preferences: Open User Settings (JSON)"` na barra de pesquisa, edite o arquivo conforme as imagens abaixo, salve e feche:
 
-A partir de agora é só executar algum código (experimente: `print('Olá, mundo!')`) e o console do R abrirá automaticamente. Praticamente, tudo que um usuário de realiza com o RStudio é possível ser realizado com o VSCode. Existem outras maneiras a serem exploradas na utilização do R e VSCode, como por exemplo, utilizar o [Radian](https://github.com/randy3k/radian) como terminal para executar os códigos em R, sendo que a abordagem apresentada neste tutorial foi a maneira mais simples e rápida para a configuração correta.
+   ![Abrindo as configurações do VS Code](abre_settings.png)
 
-# Configurações adicionais
+   ![Configurando o caminho do executável R no settings.json](configuracoes.png)
 
-Instalar os pacotes larguageserver e httpgd.
+7. Pronto! Se tudo estiver configurado conforme os passos acima, o `R` já estará pronto para ser aberto no terminal. Para isso, basta clicar em **Arquivo** (ou abrir a paleta de comandos) e iniciar um novo terminal R:
 
+   ![Iniciando um novo terminal R no VS Code](Novo_R.png)
 
-# Conclusão
+A partir de agora é só executar algum código (experimente `print("Olá, mundo!")`) e o console do R abrirá automaticamente. Praticamente tudo o que um usuário de R realiza com o RStudio pode ser realizado com o VS Code. Existem outras maneiras a serem exploradas na integração entre R e VS Code, como utilizar o [radian](https://github.com/randy3k/radian) como terminal interativo para executar os códigos em R, sendo a abordagem apresentada neste tutorial a maneira mais simples e direta para a configuração inicial.
+
+## Configurações adicionais
+
+Recomenda-se instalar também os pacotes `languageserver` e `httpgd` para melhor visualização interativa de gráficos dentro do VS Code.
+
+## Conclusão
 
 Este post buscou introduzir e exemplificar o procedimento para a instalação e configuração básica do R no VS Code.
-
-<!-- ![](R_cran.jpg) -->
-
-
-

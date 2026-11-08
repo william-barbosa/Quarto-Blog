@@ -1,7 +1,8 @@
 ---
 title: "Análise Espacial do Impacto da Agropecuária na Taxa de Desflorestamento dos Biomas Brasileiros"
+description: "Análise econométrica espacial do impacto da expansão agropecuária na taxa de desflorestamento em nível de biomas brasileiros."
 categories: [Análise Espacial, Desflorestamento, Agropecuária]
 image: "image.jpg"
 ---
 
-O objetivo deste projeto é analisar o impacto da expansão da agropecuária na taxa de desflorestamento a nível de biomas brasileiros.
+O objetivo deste projeto é analisar o impacto da expansão da agropecuária na taxa de desflorestamento em nível de biomas brasileiros utilizando técnicas de econometria espacial e geoprocessamento.
