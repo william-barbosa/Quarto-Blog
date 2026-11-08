@@ -1,8 +1,53 @@
 ---
-title: "Sobre Mim"
-subtitle: "Trajetória Acadêmica, Experiência Profissional e Competências Técnicas"
+pagetitle: "William Barbosa | Sobre"
 title-block-banner: false
 toc: true
+page-layout: full
+---
+
+:::: {.quarto-about-trestles .column-page-left}
+
+::: {.about-entity}
+![](perfil2.jpg){.about-image .rounded style="width: 14em;"}
+
+```{=html}
+<header id="title-block-header" class="quarto-title-block default">
+  <div class="quarto-title">
+    <h1 class="title">William Barbosa</h1>
+    <p class="subtitle lead">Doutor em Economia Aplicada (ESALQ/USP) | Consultor de Riscos | Cientista de Dados</p>
+  </div>
+</header>
+<div class="about-links">
+  <a href="https://wquant.com.br/" class="about-link" target="_blank" rel="noopener">
+    <i class="bi bi-globe"></i> <span class="about-link-text">WQuant</span>
+  </a>
+  <a href="https://github.com/william-barbosa" class="about-link" target="_blank" rel="noopener">
+    <i class="bi bi-github"></i> <span class="about-link-text">GitHub</span>
+  </a>
+  <a href="http://lattes.cnpq.br/9370334825334170" class="about-link" target="_blank" rel="noopener">
+    <i class="bi bi-mortarboard"></i> <span class="about-link-text">Lattes</span>
+  </a>
+  <a href="Curriculo/William_Barbosa.pdf" class="about-link" target="_blank" rel="noopener">
+    <i class="bi bi-file-earmark-pdf"></i> <span class="about-link-text">Currículo</span>
+  </a>
+  <a href="mailto:williambarbosa@alumni.usp.br" class="about-link">
+    <i class="bi bi-envelope"></i> <span class="about-link-text">E-mail</span>
+  </a>
+</div>
+```
+:::
+
+::: {.about-contents}
+
+::: {.about-header}
+# Sobre Mim {.unnumbered .unlisted}
+[Trajetória Acadêmica, Experiência Profissional e Competências Técnicas]{.lead .text-muted}
+:::
+
+Olá, meu nome é **William Barbosa**. Sou Doutor em Economia Aplicada pela **ESALQ/USP** e atuo como **Consultor de Riscos** em um grande banco global, onde desenvolvo modelos quantitativos de *stress testing* para previsão de indicadores de inadimplência (*PD* e *LGD*), *credit risk rating* e *score*.
+
+Neste espaço, compartilho estudos sobre finanças quantitativas, econometria, tutoriais de programação (`R`, `Python`, `Julia` e `SQL`) e análises de cenários econômicos, sempre com código aberto e reprodutível.
+
 ---
 
 ## Experiência Profissional e Docência
@@ -46,12 +91,6 @@ toc: true
   - Modelagem de Risco de Crédito (*Stress Testing*, *PD*, *LGD*, *Rating* e *Score*);
   - *Machine Learning*, Mineração de Texto (*Text Mining*), *Web Scraping* e manipulação em ambiente *Big Data*.
 
----
+:::
 
-## Links e Contato
-
-- **Currículo Completo (PDF):** [Baixar Currículo](Curriculo/William_Barbosa.pdf)
-- **Currículo Lattes:** [http://lattes.cnpq.br/9370334825334170](http://lattes.cnpq.br/9370334825334170)
-- **GitHub:** [https://github.com/william-barbosa](https://github.com/william-barbosa)
-- **Portal WQuant:** [https://wquant.com.br/](https://wquant.com.br/)
-- **E-mail:** [williambarbosa@alumni.usp.br](mailto:williambarbosa@alumni.usp.br)
+::::

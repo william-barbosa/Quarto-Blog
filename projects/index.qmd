@@ -1,5 +1,5 @@
 ---
-title: "Projetos & Produção Acadêmica"
+title: "Projetos"
 description: |
   Apresentação de como técnicas de econometria, análise espacial e *Machine Learning* podem ser empregadas na elaboração de pesquisas acadêmicas e análises econômicas reprodutíveis.
 listing:

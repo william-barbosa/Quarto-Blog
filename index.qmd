@@ -1,78 +1,96 @@
 ---
-title: "William Barbosa"
-subtitle: "Doutor em Economia Aplicada (ESALQ/USP) | Consultor de Riscos | Cientista de Dados"
-image: perfil2.jpg
-about:
-  id: hero-heading
-  template: trestles
-  image-shape: rounded
-  image-width: 15em
-  links:
-    - icon: globe
-      text: WQuant
-      href: https://wquant.com.br/
-    - icon: github
-      text: GitHub
-      href: https://github.com/william-barbosa
-    - icon: mortarboard
-      text: Lattes
-      href: http://lattes.cnpq.br/9370334825334170
-    - icon: file-earmark-pdf
-      text: Currículo
-      href: Curriculo/William_Barbosa.pdf
-    - icon: envelope
-      text: E-mail
-      href: mailto:williambarbosa@alumni.usp.br
-listing:
-  - id: recent-posts
-    contents: blog
-    sort: "date desc"
-    type: default
-    max-items: 3
-    categories: false
-    sort-ui: false
-    filter-ui: false
-    fields: [date, title, description, categories, image]
-  - id: featured-projects
-    contents:
-      - projects/project_1
-      - projects/project_2
-    type: grid
-    grid-columns: 2
-    image-height: 150px
-    fields: [title, description, categories, image]
-    sort-ui: false
-    filter-ui: false
+pagetitle: "William Barbosa | Sobre"
 title-block-banner: false
-toc: false
+toc: true
+page-layout: full
 ---
 
-::: {#hero-heading}
+:::: {.quarto-about-trestles .column-page-left}
 
-Olá, meu nome é **William Barbosa**.
+::: {.about-entity}
+![](perfil2.jpg){.about-image .rounded style="width: 14em;"}
 
-Sou Doutor em Economia Aplicada pela **ESALQ/USP** e atuo como **Consultor de Riscos** em um grande banco global, onde desenvolvo modelos quantitativos de *stress testing* para previsão de indicadores de inadimplência (*PD* e *LGD*), *credit risk rating* e *score*. Também atuo como professor orientador nos MBAs de *Data Science & Analytics* e Agronegócios no **PECEGE/USP**.
+```{=html}
+<header id="title-block-header" class="quarto-title-block default">
+  <div class="quarto-title">
+    <h1 class="title">William Barbosa</h1>
+    <p class="subtitle lead">Doutor em Economia Aplicada (ESALQ/USP) | Consultor de Riscos | Cientista de Dados</p>
+  </div>
+</header>
+<div class="about-links">
+  <a href="https://wquant.com.br/" class="about-link" target="_blank" rel="noopener">
+    <i class="bi bi-globe"></i> <span class="about-link-text">WQuant</span>
+  </a>
+  <a href="https://github.com/william-barbosa" class="about-link" target="_blank" rel="noopener">
+    <i class="bi bi-github"></i> <span class="about-link-text">GitHub</span>
+  </a>
+  <a href="http://lattes.cnpq.br/9370334825334170" class="about-link" target="_blank" rel="noopener">
+    <i class="bi bi-mortarboard"></i> <span class="about-link-text">Lattes</span>
+  </a>
+  <a href="Curriculo/William_Barbosa.pdf" class="about-link" target="_blank" rel="noopener">
+    <i class="bi bi-file-earmark-pdf"></i> <span class="about-link-text">Currículo</span>
+  </a>
+  <a href="mailto:williambarbosa@alumni.usp.br" class="about-link">
+    <i class="bi bi-envelope"></i> <span class="about-link-text">E-mail</span>
+  </a>
+</div>
+```
+:::
+
+::: {.about-contents}
+
+::: {.about-header}
+# Sobre Mim {.unnumbered .unlisted}
+[Trajetória Acadêmica, Experiência Profissional e Competências Técnicas]{.lead .text-muted}
+:::
+
+Olá, meu nome é **William Barbosa**. Sou Doutor em Economia Aplicada pela **ESALQ/USP** e atuo como **Consultor de Riscos** em um grande banco global, onde desenvolvo modelos quantitativos de *stress testing* para previsão de indicadores de inadimplência (*PD* e *LGD*), *credit risk rating* e *score*.
 
 Neste espaço, compartilho estudos sobre finanças quantitativas, econometria, tutoriais de programação (`R`, `Python`, `Julia` e `SQL`) e análises de cenários econômicos, sempre com código aberto e reprodutível.
 
-Confira minha formação detalhada e trajetória na página [Sobre](about.qmd) ou acesse o [Currículo Completo (PDF)](Curriculo/William_Barbosa.pdf).
+---
 
-:::
+## Experiência Profissional e Docência
+
+- **Consultor de Metodologia de Riscos (ERM Forecasting)** | *Santander Brasil* (2020–Presente)  
+  Desenvolvimento de modelos quantitativos de *stress testing* para predição de indicadores de inadimplência (*Probability of Default – PD* e *Loss Given Default – LGD*), além de modelos de *credit risk rating* e *score*.
+- **Professor Orientador de MBA** | *PECEGE / USP* (2021–Presente)  
+  Orientação de trabalhos de conclusão de curso (*lato sensu*) no MBA em *Data Science & Analytics*.
+- **Professor Orientador e Consultor Externo** | *PECEGE / USP* (2019–2022)  
+  Orientação de trabalhos de conclusão de curso nos MBAs em Agronegócios e Gestão de Negócios, além de consultoria externa e revisão de cálculos de viabilidade econômico-financeira e fluxo de caixa.
 
 ---
 
-## Últimas Postagens
+## Formação Acadêmica
 
-::: {#recent-posts}
-:::
-
-[Ver todas as postagens →](blog.qmd){.btn .btn-outline-primary .btn-sm}
+- **Doutorado em Economia Aplicada** (2017–2021)  
+  *Escola Superior de Agricultura "Luiz de Queiroz" – Universidade de São Paulo (ESALQ/USP)*  
+  **Tese:** *Climate change in agriculture and internal migration in Brazil*
+- **MBA em Data Science & Analytics** (2021–2023)  
+  *Programa de Educação Continuada em Economia e Gestão de Empresas (PECEGE/USP)*  
+  **Monografia:** *Spatial analysis of the deforestation rate in the Cerrado Biome 1985–2017*
+- **MBA em Agronegócios** (2019–2021)  
+  *Programa de Educação Continuada em Economia e Gestão de Empresas (PECEGE/USP)*  
+  **Monografia:** *Analysis of deforestation and agricultural growth in the municipalities of MATOPIBA 2006–2017*
+- **Mestrado em Economia e Desenvolvimento** (2015–2017)  
+  *Universidade Federal de Santa Maria (UFSM/RS)*  
+  **Dissertação:** *Migrations in Brazil: An Application of the Gravity Model with Panel Data (2002–2015)*
+- **Bacharelado em Ciências Econômicas** (2011–2014)  
+  *Universidade Estadual de Ponta Grossa (UEPG/PR)*  
+  **Monografia:** *Empirical Analysis of the Evidence of Deindustrialization in the State of Paraná in the Period from 1996 to 2012*
 
 ---
 
-## Projetos em Destaque
+## Competências Técnicas
 
-::: {#featured-projects}
+- **Linguagens & Programação:** `R` (9+ anos), `LaTeX` (9+ anos), `SQL` (5+ anos), `Python` (4+ anos), `Julia` (2+ anos).
+- **Ferramentas & Ecossistema:** `QGIS` (10+ anos), `RMarkdown` / `Quarto`, `Shiny App`, `Git`, `VS Code`, `RStudio` e `Stata`.
+- **Modelagem & Métodos Quantitativos:**
+  - Econometria de Séries Temporais, Econometria Espacial e Dados em Painel;
+  - Modelos de Variável Dependente Limitada (*Logit* e *Probit*) e Dados de Contagem;
+  - Modelagem de Risco de Crédito (*Stress Testing*, *PD*, *LGD*, *Rating* e *Score*);
+  - *Machine Learning*, Mineração de Texto (*Text Mining*), *Web Scraping* e manipulação em ambiente *Big Data*.
+
 :::
 
-[Ver todos os projetos e publicações →](projects/index.qmd){.btn .btn-outline-primary .btn-sm}
+::::
